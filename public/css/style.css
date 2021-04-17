@@ -3113,9 +3113,10 @@ footer .bottom-footer {padding: 25px 0 70px 0;}
 /* blog-cards */
 .blog-section{
   padding-top: 120px;
+  padding-bottom: 60px;
 }
 
-.card{
+.blog-section .card{
   border: none !important;
   padding: 15px !important;
   width: 25% !important;
