@@ -1,48 +1,40 @@
-import Document, { Html, Head, Main, NextScript } from "next/document"
-import { HomePage } from "../components/HomePage"
-import Link from 'next/link'
+import Document, { Html, Head, Main, NextScript } from "next/document";
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
-    const initialProps = await Document.getInitialProps(ctx)
-    return { ...initialProps }
+    const initialProps = await Document.getInitialProps(ctx);
+    return { ...initialProps };
   }
 
   render() {
     return (
-      <Html>
+      <Html lang="en">
         <Head>
           <meta charSet="UTF-8" />
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-          <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0"
-          />
           <meta name="theme-color" content="#2c2c2c" />
           <meta name="msapplication-navbutton-color" content="#2c2c2c" />
           <meta
             name="apple-mobile-web-app-status-bar-style"
             content="#2c2c2c"
           />
-          <title>Coding Academy in Tashkent</title>
           <link
             rel="icon"
             type="image/png"
             sizes="56x56"
             href="images/fav-icon/icon.png"
           />
+
           <link rel="stylesheet" type="text/css" href="css/style.css" />
           <link rel="stylesheet" type="text/css" href="css/responsive.css" />
-          
         </Head>
         <body>
           <Main />
           <NextScript />
-          <Link href='/'>
-          <HomePage />
-          </Link>
-          
 
+          <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+          <script src="vendor/html5shiv.js"></script>
+          <script src="vendor/respond.js"></script>
           <script
             type="text/javascript"
             src="vendor/jquery.2.2.3.min.js"
@@ -70,6 +62,7 @@ class MyDocument extends Document {
             type="text/javascript"
             src="vendor/Camera-master/scripts/camera.min.js"
           ></script>
+
           <script
             type="text/javascript"
             src="vendor/bootstrap-mega-menu/js/menu.js"
@@ -90,12 +83,10 @@ class MyDocument extends Document {
             type="text/javascript"
             src="vendor/jquery.countTo.js"
           ></script>
-
           <script
             type="text/javascript"
             src="vendor/fancybox/dist/jquery.fancybox.min.js"
           ></script>
-
           <script type="text/javascript" src="js/theme.js"></script>
         </body>
       </Html>
@@ -103,4 +94,4 @@ class MyDocument extends Document {
   }
 }
 
-export default MyDocument
+export default MyDocument;

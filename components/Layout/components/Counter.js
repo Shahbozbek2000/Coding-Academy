@@ -2,6 +2,7 @@ import React from 'react'
 
 export function Counter() {
     return (
+     
         <div className="theme-counter">
         <div className="container">
             <div className="row">
@@ -34,7 +35,8 @@ export function Counter() {
                     </div>
                 </div>
             </div> 
-        </div> 
-    </div> 
+        </div>
+    </div>
+    
     )
 }

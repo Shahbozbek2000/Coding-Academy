@@ -26,7 +26,7 @@ export  function Contact() {
 															<ul className="clearfix">
 																<li className="float-left">
 																	<input type="checkbox" id="remember"/>
-																	<label for="remember">Remember Me</label>
+																	<label htmlFor="remember">Remember Me</label>
 																</li>
 																<li className="float-right"><a href="#" className="p-color">Lost Your
 																		Password?</a></li>

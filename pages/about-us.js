@@ -1,13 +1,15 @@
 import React from 'react'
 
+
+
 export  default function About_us() {
     return (
         <div>
-        <div className="inner-page-banner">
+       <div className="inner-page-banner">
         <div className="opacity">
             <h1>Company Story</h1>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="/">Home</a></li>
                 <li>/</li>
                 <li>About us</li>
             </ul>
@@ -1444,7 +1446,7 @@ export  default function About_us() {
                                         
             <section id="part-one">
                 <div className="container">
-                    <div className="col-lg-4 col-sm-6 col-md-4 col-xs-12">
+                    <div className="col-lg-4 col-sm-12 col-md-4 col-12">
                         <div className="card" style={{backgroundColor:'#75B74F'}}>
                             <div className="card-image">
                                 <svg width="62px" height="62px" viewBox="0 0 62 62" version="1.1"

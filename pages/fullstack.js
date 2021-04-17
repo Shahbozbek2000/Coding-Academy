@@ -1,58 +1,21 @@
-import React from "react";
-import Head from "next/head";
-import Link from "next/link";
+import React from "react"
+import Head from "next/head"
+import Link from "next/link"
+import {FullStackHeader} from '../fullStackComponent/FullStackHeader'
 
 export default function fullstack() {
   return (
     <div>
       <Head>
+      <meta charSet="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta name='keywords' content='Bootcamp' />
+      
         <title>Full-Stack Page</title>
       </Head>
-      
-      <div id="theme-main-banner" className="banner-two">
-        <div data-src="https://www.witszen.com/wp-content/uploads/2018/07/Web-Design-Company-1-2000x1200.jpg">
-          <div className="camera_caption">
-            <div className="container">
-              <h5 className="wow fadeInUp animated">Web Development</h5>
-              <h1 className="wow fadeInUp animated" data-wow-delay="0.2s">
-                CAT kurslari studentlarga butun hayoti davomida yuqori darajada
-                dasturchilar bo'lishiga ko'mak beradi
-              </h1>
-              <Link href="/">
-                <a
-                  className="tran3s hvr-trim wow fadeInUp
-                        animated p-bg-color button-one"
-                  data-wow-delay="0.3s"
-                >
-                  Batafsil
-                </a>
-              </Link>
-            </div>
-          </div>
-        </div>
-        <div data-src="https://cdn.hintword.com/articles/images/1564516961273159.jpeg">
-          <div className="camera_caption">
-            <div className="container">
-              <h5 className="wow fadeInUp animated">Web Development</h5>
-              <h1 className="wow fadeInUp animated" data-wow-delay="0.2s">
-                CAT kurslari studentlarga butun hayoti davomida yuqori darajada
-                dasturchilar bo'lishiga ko'mak beradi
-              </h1>
-              <Link href="/">
-                <a
-                  className="tran3s hvr-trim wow fadeInUp
-                        animated p-bg-color button-one"
-                  data-wow-delay="0.3s"
-                >
-                  Batafsil
-                </a>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <section id="career-wrapper">
+      <body>
+      <FullStackHeader/>
+    <section id="career-wrapper">
         <div className="container">
           <h1>O'z kareerangni dasturchi sifatida boshla</h1>
           <p>
@@ -416,60 +379,45 @@ export default function fullstack() {
       </div>
 
       <div className="pricing-plan-one">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-6 col-xs-12 wow fadeInLeft">
-              <div className="theme-title">
-                <h6>Bizning narxlar</h6>
-                <h2>
-                  O'zingizga mos keladigan
-                  <br />
-                  to'lov planini tanlang
-                </h2>
-                <p>O'z joyingizni bron qilish</p>
-              </div>
-              <ul className="nav nav-tabs">
-                <li className="active">
-                  <a data-toggle="tab" href="#monthly">
-                    Oylik
-                  </a>
-                </li>
-                <li>
-                  <a data-toggle="tab" href="#yearly">
-                    To'liq kurs
-                  </a>
-                </li>
-              </ul>
+      <div className="container">
+        <div className="row">
+          <div className="col-md-6 col-xs-12 wow fadeInLeft">
+            <div className="theme-title">
+              <h6>Bizning narxlar</h6>
+              <h2>O'zingizga mos keladigan<br/>to'lov planini tanlang</h2>
+              <p>O'z joyingizni bron qilish</p>
             </div>
+            <ul className="nav nav-tabs">
+              <li className="active"><a data-toggle="tab" href="#monthly">Oylik</a></li>
+              <li><a data-toggle="tab" href="#yearly">To'liq kurs</a></li>
+            </ul>
+          </div>
 
-            <div className="col-md-6 col-xs-12 wow fadeInRight">
-              <div className="tab-content">
-                <div id="monthly" className="tab-pane fade in active">
-                  <div className="clearfix">
-                    <div className="float-left left-side">
-                      <span style={{ letterSpacing: "3px" }}>549000</span>
-                      <h6>Business</h6>
-                      <Link href="/">
-                        <a href="#">+</a>
-                      </Link>
-                    </div>
-                    <div className="right-side float-left">
-                      <h4>Oylik to'lov</h4>
-                    </div>
+          <div className="col-md-6 col-xs-12 wow fadeInRight">
+            <div className="tab-content">
+              <div id="monthly" className="tab-panel fade in active">
+                <div className="clearfix">
+                  <div className="float-left left-side">
+                    <span>549000</span>
+                    <h6>Business</h6>
+                    <a href="#">+</a>
+                  </div>
+                  <div className="right-side float-left">
+
+                    <h4>Oylik to'lov</h4>
+                
                   </div>
                 </div>
-                <div id="yearly" className="tab-pane fade">
-                  <div className="clearfix">
-                    <div className="float-left left-side">
-                      <span style={{ letterSpacing: "2px" }}>4000000</span>
-                      <h6>Business</h6>
-                      <Link href="/">
-                        <a>+</a>
-                      </Link>
-                    </div>
-                    <div className="right-side float-left">
-                      <h4>To'liq kurs</h4>
-                    </div>
+              </div>
+              <div id="yearly" className="tab-panel fade">
+                <div className="clearfix">
+                  <div className="float-left left-side">
+                    <span>4000000</span>
+                    <h6>Business</h6>
+                    <a href="#">+</a>
+                  </div>
+                  <div className="right-side float-left">
+                    <h4>To'liq kurs</h4>
                   </div>
                 </div>
               </div>
@@ -477,6 +425,9 @@ export default function fullstack() {
           </div>
         </div>
       </div>
+    </div>
+    
+    </body>
     </div>
   );
 }

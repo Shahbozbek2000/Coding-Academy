@@ -1,22 +1,19 @@
-import Link from "next/link"
+import Link from "next/link";
 
 export function Navbar() {
   return (
     <div>
-      
       <header className="theme-menu-wrapper full-width-menu">
         <div className="header-wrapper">
           <div className="clearfix">
             <div className="logo float-left tran4s">
-              
-                <a href='/'> 
-                  <img
-                    src="images/logo/catlogo.png"
-                    alt="Logo"
-                    style={{ width: "150px" }}
-                  />
-                </a>
-              
+              <a href="/">
+                <img
+                  src="images/logo/catlogo.png"
+                  alt="Logo"
+                  style={{ width: "150px" }}
+                />
+              </a>
             </div>
             <nav
               className="theme-main-menu float-right navbar"
@@ -50,9 +47,7 @@ export function Navbar() {
                         </a>
                         <ul className="sub-menu-one">
                           <li>
-                            
-                              <a href='/fullstack'>Full Stack development</a>
-                           
+                            <a href="/fullstack">Full Stack development</a>
                           </li>
                           <li>
                             <Link href="/bootcamp">
@@ -62,59 +57,48 @@ export function Navbar() {
                         </ul>
                       </li>
                       <li>
-                      <Link href='/robo_kids'>
-                        <a>Robo kids</a>
+                        <Link href="/robo_kids">
+                          <a>Robo kids</a>
                         </Link>
                       </li>
                       <li>
-                     
-                        <a href='/english'>English</a>
-                      
+                        <a href="/english">English</a>
                       </li>
                       <li>
-                      
                         <a href="/">Scratch</a>
-                      
                       </li>
                     </ul>
                   </li>
                   <li className="dropdown-holder menu-list">
-                  <Link href='/blog'>
-                    <a  className="tran3s">
-                      Blog
-                    </a>
-                  </Link>
+                    <Link href="/blog">
+                      <a className="tran3s">Blog</a>
+                    </Link>
                   </li>
                   <li className="dropdown-holder menu-list">
-                  <Link href='/about'>
-                    <a href="#" className="tran3s">
-                      Biz haqimizda
-                    </a>
-                  </Link>
+                    <Link href="/about">
+                      <a href="#" className="tran3s">
+                        Biz haqimizda
+                      </a>
+                    </Link>
                     <ul className="sub-menu">
                       <li>
-                      <Link href='/about_us'>
-                        <a>About Us</a>
-                        </Link>
+                        <a href="about-us">About Us</a>
                       </li>
                       <li>
-                      
-                        <a href='/career'>Career</a>
-                      
+                        <a href="/career">Career</a>
                       </li>
                     </ul>
                   </li>
 
                   <li className="login-button">
-                  <Link href='/'>
-                    <a
-                      
-                      className="tran3s"
-                      data-toggle="modal"
-                      data-target=".signUpModal"
-                    >
-                      Ro'yxatdan o'tish
-                    </a>
+                    <Link href="/">
+                      <a
+                        className="tran3s"
+                        data-toggle="modal"
+                        data-target=".signUpModal"
+                      >
+                        Ro'yxatdan o'tish
+                      </a>
                     </Link>
                   </li>
                 </ul>

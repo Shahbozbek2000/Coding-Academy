@@ -7,6 +7,7 @@ export default function English() {
            <title>English courses</title>
 
         </Head>
+        <body>
         <div id="theme-main-banner" className="banner-two">
         <div
             data-src="https://i2.wp.com/opportunitiesabroad.org/wp-content/uploads/2018/11/8-November.jpg?w=999&ssl=1">
@@ -399,6 +400,7 @@ export default function English() {
             </div>
         </div>
     </div>
+    </body>
         </div>
     )
 }

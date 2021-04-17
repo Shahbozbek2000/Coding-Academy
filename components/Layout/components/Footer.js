@@ -44,9 +44,9 @@ export function Footer() {
                 </div>
             </div>
 
-            <div class="bottom-footer clearfix">
+            <div className="bottom-footer clearfix">
 
-                <p class="float-left">&copy; 2021 <a href="#" class="tran3s
+                <p className="float-left">&copy; 2021 <a href="#" className="tran3s
                         p-color">Coding Academy in Tashkent</a>.
                 </p>
             </div>

@@ -2,15 +2,14 @@ import React from 'react'
 
 export  function WebDevelopment() {
     return (
-        <div>
         <div className="more-about-us">
         <div className="image-box">
             <svg version="1.1" className="Layer_1" xmlns="http://www.w3.org/2000/svg"
-            xmlnsXlink="http://www.w3.org/1999/xlink"  width="854" height="632">
+                xmlnsXlink="http://www.w3.org/1999/xlink" width="854" height="632">
                 <clipPath className="clip1">
-                    <use xlinkHref="#shape-one"  />
+                    <use xlinkHref="#shape-one" />
                     </clipPath>
-                    <g clipPath="url(#shape-one)">
+                    <g clip-path="url(#shape-one)">
                         <image width="854" height="632"
                             href="https://raw.githubusercontent.com/abhisheknaiidu/abhisheknaiidu/master/code.gif"
                             className="image-shape">
@@ -48,12 +47,8 @@ export  function WebDevelopment() {
                             </div> 
                         </div> 
                     </div> 
-                </div>
+                </div> 
             </div> 
-        </div> 
-
-
-
         </div>
     )
 }
