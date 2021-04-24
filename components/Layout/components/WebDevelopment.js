@@ -9,7 +9,7 @@ export  function WebDevelopment() {
                 <clipPath className="clip1">
                     <use xlinkHref="#shape-one" />
                     </clipPath>
-                    <g clip-path="url(#shape-one)">
+                    <g clipPath="url(#shape-one)">
                         <image width="854" height="632"
                             href="https://raw.githubusercontent.com/abhisheknaiidu/abhisheknaiidu/master/code.gif"
                             className="image-shape">
@@ -40,7 +40,7 @@ export  function WebDevelopment() {
 
                                 <div className="button-wrapper p-bg-color">
                                     <span>Kurs haqida</span>
-                                    <a href="about-us.html" className="hvr-icon-wobble-horizontal">
+                                    <a href="/fullstack" className="hvr-icon-wobble-horizontal">
                                         Ko'proq Ma'lumot <i className="fa fa-long-arrow-right"
                                             aria-hidden="true"></i></a>
                                 </div> 

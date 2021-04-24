@@ -18,12 +18,7 @@ class MyDocument extends Document {
             name="apple-mobile-web-app-status-bar-style"
             content="#2c2c2c"
           />
-          <link
-            rel="icon"
-            type="image/png"
-            sizes="56x56"
-            href="images/fav-icon/icon.png"
-          />
+         
 
           <link rel="stylesheet" type="text/css" href="css/style.css" />
           <link rel="stylesheet" type="text/css" href="css/responsive.css" />

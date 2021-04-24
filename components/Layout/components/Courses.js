@@ -1,4 +1,5 @@
-import React from "react";
+import React from "react"
+import Image from 'next/image'
 
 export function Courses() {
   return (
@@ -15,7 +16,10 @@ export function Courses() {
             
               <div className="item">
                 <div className="image">
-                  <img src="images/carousel/carousel-1.webp" alt="" />
+                 
+                 
+                   <img src='/images/carousel/carousel-1.webp' alt='programming' />
+                   
                   <div className="opacity tran4s">
                     <a
                       data-fancybox="project"

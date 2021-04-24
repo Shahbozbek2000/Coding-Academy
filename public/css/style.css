@@ -1,60 +1,3 @@
-
-/* cleSS Document */
-
-/* 
-    Created on   : 24/09/2017.
-    Theme Name   : Gullu.
-    Description  : Gullu - Agency & Startup HTML Template
-    Version      : 1.1.
-    Author       : @CreativeGigs.
-    Developed by : Jubayer al hasan. (jubayer.hasan1991@gmail.com)
-   
-*/
-
-/* ------------------------------------------ */
-/*             TABLE OF CONTENTS
-/* ------------------------------------------ */
-/*   01 - Global stlye  */
-/*   02 - Theme Title  */
-/*   03 - Theme Menu  */
-/*   04 - SignUp Modla Box */
-/*   05 - Theme Banner */
-/*   06 - What we do  */
-/*   07 - More About Us  */
-/*   08 - Theme Counter  */
-/*   09 - Our Portfolio  */
-/*   10 - Home Service Section  */
-/*   11 - Testimonial  */
-/*   12 - Pricing Plan One  */
-/*   13 - Home Blog Section  */
-/*   14 - Footer   */
-/*   15 - Home Version 3  */
-      /*
-      What We Do Style Two
-      Company CEO Text
-      Short Banner
-      Business Statics
-      Theme Counter Style Two
-      Home Project
-      Testimonial Home Three
-      */
-/*   16 - Theme Inner Banner  */
-/*   17 - About Text  */
-/*   18 - Our Team Style One  */
-/*   19 - Trusted Client   */
-/*   20 - Our Service Version One */
-/*   21 - Our Service Version two  */
-/*   22 - Our Portfolio  */
-/*   23 - Portfolio Details  */
-/*   24 - Our Blog  */
-/*   25 - Blog Details  */
-/*   26 - Conatct US  */
-/*   27 - Shop Page  */
-/*   28 - Shop Details  */
-
-
-
-
 /**
 * Importing necessary  Styles.
 **/
@@ -108,12 +51,8 @@
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #159475; 
-}
- ***/
-
-
-#loader-wrapper {
+  background: #159475;  }
+ #loader-wrapper {
   position: fixed;
   top: 0;
   left: 0;
@@ -121,31 +60,27 @@
   height: 100%;
   z-index: 999999;
   background: #fff;
-  overflow: hidden;
-}
+  overflow: hidden; }
 #loader {
   width: 90px;
   height: 65px;
   position: relative;
   top:50%;
   left:50%;
-  transform:translate(-50%, -50%);
-}
+  transform:translate(-50%, -50%); }
 #loader ul {
   margin: 0;
   list-style: none;
   width: 90px;
   position: relative;
   padding: 0;
-  height: 10px;
-}
+  height: 10px; }
 #loader ul li {
   position: absolute;
   width: 2px;
   height: 0;
   background-color: #00d747;
-  bottom: 0;
-}
+  bottom: 0; }
 @keyframes sequence1 {
   0% {
     height: 10px;
@@ -155,8 +90,7 @@
   }
   100% {
     height: 10px;
-  }
-}
+  } }
 @keyframes sequence2 {
   0% {
     height: 20px;
@@ -165,33 +99,25 @@
     height: 65px;
   }
   100% {
-    height: 20px;
-  }
-}
+    height: 20px;  } }
 #loader li:nth-child(1) {
   left: 0;
-  animation: sequence1 1s ease infinite 0;
-}
+  animation: sequence1 1s ease infinite 0; }
 #loader li:nth-child(2) {
   left: 15px;
-  animation: sequence2 1s ease infinite 0.1s;
-}
+  animation: sequence2 1s ease infinite 0.1s; }
 #loader li:nth-child(3) {
   left: 30px;
-  animation: sequence1 1s ease-in-out infinite 0.2s;
-}
+  animation: sequence1 1s ease-in-out infinite 0.2s; }
 #loader li:nth-child(4) {
   left: 45px;
-  animation: sequence2 1s ease-in infinite 0.3s;
-}
+  animation: sequence2 1s ease-in infinite 0.3s; }
 #loader li:nth-child(5) {
   left: 60px;
-  animation: sequence1 1s ease-in-out infinite 0.4s;
-}
+  animation: sequence1 1s ease-in-out infinite 0.4s; }
 #loader li:nth-child(6) {
   left: 75px;
-  animation: sequence2 1s ease infinite 0.5s;
-}
+  animation: sequence2 1s ease infinite 0.5s; }
 /*==================== Click Top ====================*/
 .scroll-top {
   width:30px;
@@ -297,7 +223,7 @@ html{
   transition: all .4s ease-in-out;
 }
  /*----------------------- Theme Color File -------------------*/
-.p-color,.what-we-do .single-block:hover h5 a,.more-about-us .main-content .main-wrapper h4:before,.home-service-section .theme-title a:hover,
+/* .p-color,.what-we-do .single-block:hover h5 a,.more-about-us .main-content .main-wrapper h4:before,.home-service-section .theme-title a:hover,
 .home-service-section ul li:hover div h5 a,.testimonial-section .main-container .item .wrapper p:before,.home-blog-section .single-blog:hover>a,
 footer .footer-logo h5 a:hover,footer .footer-list ul li a:hover,footer .footer-subscribe ul li a:hover,#theme-main-banner.banner-one .camera_prev:before,
 #theme-main-banner.banner-one .camera_next:before,.blog-details .tag-option ul li a:hover,.our-blog .single-blog:hover .text>a,
@@ -308,8 +234,8 @@ footer .footer-logo h5 a:hover,footer .footer-list ul li a:hover,footer .footer-
 .shop-page .shop-sidebar .sidebar-categories li a:hover,.shop-page .shop-product-wrapper .single-product:hover h6 a,.shop-page .shop-product-wrapper .single-product>a:hover,
 header.theme-menu-wrapper.menu-style-two #mega-menu-wrapper .nav .login-button a:hover,.blog-sidebar .sidebar-recent-post li a:hover,.blog-sidebar .blog-categories ul li a:hover,
 .theme-modal-box .modal-content .modal-body form ul li label:before,.service-details .box-wrapper .middle-text ul li:before  {
-  color:rgba(21, 148, 117, 100%) !important;
-}
+  /* color:rgba(21, 148, 117, 100%) !important; */
+/* }  */
 .p-bg-color,header.theme-menu-wrapper #mega-menu-wrapper .nav .login-button a:hover,.our-portfolio .theme-title a:hover,.home-service-section .theme-title a:hover:before,
 .pricing-plan-one .nav-tabs > li.active > a,.pricing-plan-one .nav-tabs > li.active > a:hover,.pricing-plan-one .nav-tabs > li.active > a:focus,.banner-two .watch-video a:hover,
 .our-team-styleOne .title a:hover,.our-blog.blog-v2 .load-more:hover,.bootstrap-select.btn-group .dropdown-menu li.selected a,.bootstrap-select.btn-group .dropdown-menu li:hover a,
@@ -376,7 +302,7 @@ header.theme-menu-wrapper {
   top:0;
   left:0;
   right: 0;
-  z-index: 99;
+  z-index: 100;
   padding-top: 42px;
 }
 header.theme-menu-wrapper.full-width-menu {padding-left: 80px;padding-right:80px;}
@@ -420,6 +346,9 @@ header.theme-menu-wrapper #mega-menu-wrapper .nav .login-button a {
   border: 2px solid rgba(0,0,10,0.08);
   border-radius: 5px;
   margin: -7px 0 0 30px;
+}
+.login-button a:hover{
+  color: #000 !important;
 }
 header.theme-menu-wrapper #mega-menu-wrapper .nav .login-button a:before {display: none !important;}
 header.theme-menu-wrapper #mega-menu-wrapper .nav .login-button a:hover {color: #fff !important;}
@@ -664,6 +593,7 @@ header.theme-menu-wrapper.menu-style-three.fixed #mega-menu-wrapper .nav>li>a {p
   height: 70px;
   margin-top: -35px;
   width: 30px;
+  color: #159475;
   background: transparent;
   border-radius: 5px;
 }
@@ -676,7 +606,7 @@ header.theme-menu-wrapper.menu-style-three.fixed #mega-menu-wrapper .nav>li>a {p
   height: 100%;
   text-align: center;
   line-height: 70px;
-  color: #fff;
+  color: #159475;
   font-size: 50px;
   z-index: 9;
 }
@@ -1128,6 +1058,11 @@ header.theme-menu-wrapper.menu-style-three.fixed #mega-menu-wrapper .nav>li>a {p
   margin: 5px 0 40px 0;
 }
 /*------------------------ Our Portfolio ----------------------*/
+@media only screen and (max-width: 576px){
+  .our-portfolio .theme-title h2{
+    font-size: 22px;
+  }
+}
 .our-portfolio {padding: 120px 0 200px 0;}
 .our-portfolio .theme-title:before {
   content: 'C';
@@ -1371,6 +1306,7 @@ header.theme-menu-wrapper.menu-style-three.fixed #mega-menu-wrapper .nav>li>a {p
   line-height: 34px;
   margin: 35px 0 0 0;
 }
+
 .pricing-plan-one .nav-tabs {border: none !important;margin-top: 46px !important;}
 .pricing-plan-one .nav-tabs > li {margin: 0 !important;}
 .pricing-plan-one .nav-tabs > li > a {
@@ -1389,6 +1325,19 @@ header.theme-menu-wrapper.menu-style-three.fixed #mega-menu-wrapper .nav>li>a {p
 .pricing-plan-one{
   margin-top: 120px !important;
 }
+@media only screen and (max-width: 576px) {
+  .pricing-plan-one .tab-content{
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .pricing-plan-one .left-side, .pricing-plan-one .right-side{
+    width: 100% !important;
+  }
+  .theme-title h2{
+    
+    width: 100%;
+  }
+}
 .pricing-plan-one .nav-tabs > li:first-child > a {border-radius: 28px 0 0 28px !important;}
 .pricing-plan-one .nav-tabs > li:last-child > a {border-radius: 0 28px 28px 0 !important;}
 .pricing-plan-one .nav-tabs > li.active > a,
@@ -1401,9 +1350,7 @@ header.theme-menu-wrapper.menu-style-three.fixed #mega-menu-wrapper .nav>li>a {p
   color: #fff !important;
   padding: 50px 0 0 0 !important;
 }
-.pricing-plan-one .tab-content{
-  height: 398px;
-}
+
 .pricing-plan-one .tab-content .left-side span {
   font-family: 'Lato', sans-serif;
   font-weight: 900 !important;
@@ -1520,6 +1467,7 @@ footer.bg-two {
   background: url(../images/home/footer2.jpg) no-repeat center center;background-size: cover;
   padding-top: 150px;
 }
+
 
 footer {padding-top:180px;}
 footer .footer-logo h5 a {
@@ -1831,7 +1779,7 @@ footer .bottom-footer {padding: 25px 0 70px 0;}
 }
 .inner-page-banner .opacity h1 {
   color: #fff;
-  text-transform: capitalize;
+  font-weight: 400;
 }
 .inner-page-banner .opacity ul li {
   display: inline-block;
@@ -2000,8 +1948,10 @@ footer .bottom-footer {padding: 25px 0 70px 0;}
 /*----------------------- Our Service Version One -----------------------*/
 .service-version-one {padding-bottom: 130px; padding-top: 100px;}
 .service-version-one h2 {
-  line-height: 55px;
-  margin-bottom: 110px;
+  line-height: 40px;
+  font-size: 30px;
+  margin-bottom: 30px;
+  
 }
 .service-version-one .single-service i {
   display: block;
@@ -2992,6 +2942,7 @@ footer .bottom-footer {padding: 25px 0 70px 0;}
   border-radius: 0;
 }
 .nav-tabs {border: none;}
+
 .shop-details .procuct-details .product-info h3 {
   font-weight: 600;
   line-height: 40px;
@@ -3157,11 +3108,19 @@ footer .bottom-footer {padding: 25px 0 70px 0;}
   .blog-section .card{
     width: 100% !important;
   }
+  .blog-section h4{
+    font-size: 20px;
+  }
+  .blog-section h2{
+    font-size: 23px;
+    margin-top: 20px;
+  }
 }
 /* career card */
 #career-wrapper .card{
   width: 100% !important;
   margin-bottom: 60px;
+  padding: 20px;
   transition: all 0.5s !important;
   cursor:  pointer !important;
   margin-top: 70px !important; }
@@ -3180,6 +3139,17 @@ footer .bottom-footer {padding: 25px 0 70px 0;}
   font-size: 45px;
   margin-bottom: 40px;
   font-weight: 600; }
+
+  @media only screen and (max-width: 576px) {
+    #career-wrapper .container h1{
+      font-size: 25px;
+      line-height: 2.2;
+    }
+    #career-wrapper .container p{
+      text-align: justify;
+    }
+  }
+
   /* tab menu */
  
 
@@ -3822,7 +3792,9 @@ footer .bottom-footer {padding: 25px 0 70px 0;}
 #part-one .card .card-name h4{
   color: #fff;
   font-size: 17px; }
-
+.camera_caption h1{
+  width: 50%;
+}
   @media only screen and (max-width: 992px) {
     #theme-main-banner .camera_caption h1{
       font-size: 25px;
@@ -3832,13 +3804,16 @@ footer .bottom-footer {padding: 25px 0 70px 0;}
   @media only screen and (max-width: 576px) {
     #theme-main-banner .camera_caption h1{
       width: 100%;
-      font-size: 20px;
+      font-size: 18px;
+      text-align: justify;
     }
   }
 
 .p-color{
   margin-top: 40px !important;
 }
+
+
 
 /* career style */
 #part-2{
@@ -3936,4 +3911,152 @@ footer .bottom-footer {padding: 25px 0 70px 0;}
 .panel:not(:last-child) {
   margin-bottom: 3px;
 }
+
+.modal{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.paper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  height: 80%;
+  border-radius: 4px;
+  outline: none;
+  background-color: white;
+  padding: 40px;
+}
+.form-group label{
+  font-family: 'Poppins', sans-serif;
+}
+.paper h2{
+  margin-bottom: 60px;
+}
+.paper .form-group .form-control{
+  outline: none;
+  height: 40px;
+  width:400px;
+  font-family: 'Poppins', sans-serif;
+}
+.paper .btn-group{
+ 
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+}
+.paper .btn-group button{
+  display: inline-block;
+  width: 100%;
+  height: 50px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background-color: #159475;
+}
+
+@media screen and (max-width: 992px){
+  .paper{
+    width: 80%;
+  }
+  .paper .form-group .form-control{
+    width: 100%;
+  }
+}
+
+.tab-set {
+  padding: 20px;
+  border: 1px solid #a5acb1;
+  border-radius: 5px;
+  background: #fff;
+}
+
+.PrivateTabIndicator-colorSecondary-4{
+  background-color: #428BFF !important;
+  border: 2px solid #428BFF;
+  border-radius: 3px;
+}
+.fullstack_tab-wrapper{
+  position: relative;
+  z-index: 1;
+  width: 100%;
+ 
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  background-color: #F3F6F8 !important; 
+  padding: 60px 0;
+  
+}
+.fullstack_tab-wrapper .container{
+  display: flex !important;
+  justify-content: center !important;
+  flex-direction: column !important;
+  align-content: center !important;
+
+}
+.fullstack_tab-wrapper .container .tabs-label{
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: bold !important;
+  font-size: 13px;
+}
+
+.MuiAppBar-colorPrimary {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  color: #000 !important;
+  font-family: 'Poppins', sans-serif !important;
+  text-transform: capitalize !important;
+}
+.fullstack_tab-wrapper .row{
+  padding-top: 60px;
+}
+.programming-wrapper{
+  display: flex;
+}
+.programming-wrapper-image img{
+  width: 80px; }
+.programming-wrapper-info{
+  font-family: 'Poppins', sans-serif;
+  padding-left: 15px; }
+.programming-wrapper-info p{
+  width: 85%;
+  margin-top: 10px;
+  line-height: 2;
+  font-size: 14px;
+}
+
+/* start about us media */
+
+@media only screen and (max-width: 576px) {
+  .inner-page-banner .opacity h1{
+    font-size: 25px !important;
+  }
+  .about-text .container .title h2{
+    font-size: 24px;
+    line-height: 1.8;
+  }
+.about-tab-wrapper .tab-content p{
+  font-size: 14px;
+  text-align: justify;
+}
+.our-team-styleOne .container .title h2{
+  font-size: 20px;
+  margin-bottom: -80px; }
+#part-one {
+  padding: 60px 0;
+}
+.programming-wrapper{
+  margin-top: 40px;
+  width: 80%;
+}
+
+
+}
+/* the end about us media */
+
+
 

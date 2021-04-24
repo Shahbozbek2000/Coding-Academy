@@ -7,12 +7,9 @@ const Layout = ({ children }) => {
   return (
     <div className="main-page-wrapper">
       <Loader />
-      <Navbar />
-
+      <Navbar  />
       {children}
       <Footer />
-      <Contact />
-
       <button className="scroll-top tran3s">
         <i className="fa fa-angle-up" aria-hidden="true"></i>
       </button>
