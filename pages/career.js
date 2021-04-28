@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { Accordion } from "../careerComponents/Accordion";
-import { CareerDevelopment } from "../careerComponents/careerDevelopment";
+import { CareerDevelopment } from "../careerComponents/CareerDevelopment"
 
 export default function Career() {
   return (
