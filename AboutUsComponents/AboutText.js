@@ -11,7 +11,7 @@ export function AboutText() {
             bo’lishga yordam berishdir.
             </h2>
           </div>
-          <img src="images/home/about-us.jpg" alt="" />
+          <img src="https://partycakesnthings.com/wp-content/uploads/2020/04/Blog-Pintar-New-Website--2048x1365.jpg" alt="" />
           <div className="about-tab-wrapper clearfix">
             <ul className="nav nav-tabs float-left">
               <li className="active">

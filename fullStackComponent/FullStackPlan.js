@@ -25,7 +25,7 @@ export default function FullStackPlan() {
                 <div className="clearfix">
                   <div className="float-left left-side">
                     <span>549000</span>
-                    <h6>Business</h6>
+                  
                     <a href="#">+</a>
                   </div>
                   <div className="right-side float-left">
@@ -39,7 +39,7 @@ export default function FullStackPlan() {
                 <div className="clearfix">
                   <div className="float-left left-side">
                     <span>4000000</span>
-                    <h6>Business</h6>
+                    
                     <a href="#">+</a>
                   </div>
                   <div className="right-side float-left">

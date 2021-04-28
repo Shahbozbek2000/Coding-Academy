@@ -1,4 +1,4 @@
-import Document, { Html, Head, Main, NextScript } from "next/document";
+import Document, { Html, Head, Main, NextScript } from "next/document"
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -27,9 +27,10 @@ class MyDocument extends Document {
           <Main />
           <NextScript />
 
-          <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+          
           <script src="vendor/html5shiv.js"></script>
           <script src="vendor/respond.js"></script>
+          <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
           <script
             type="text/javascript"
             src="vendor/jquery.2.2.3.min.js"

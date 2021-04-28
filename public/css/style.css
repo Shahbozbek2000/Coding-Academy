@@ -576,7 +576,7 @@ header.theme-menu-wrapper.menu-style-three.fixed #mega-menu-wrapper .nav>li>a {p
   /* -webkit-clip-path: url(#shape-one) !important;
           clip-path: url(#shape-one) !important; 
   width: 100%; */
-  clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 42% 97%, 27% 71%, 0% 70%, 0% 35%, 20% 10%) !important;
+  /* clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 42% 97%, 27% 71%, 0% 70%, 0% 35%, 20% 10%) !important; */
   
   object-fit: cover;
   object-position:center 0;
@@ -1032,6 +1032,7 @@ header.theme-menu-wrapper.menu-style-three.fixed #mega-menu-wrapper .nav>li>a {p
   /* -webkit-clip-path: url(#shape-one) !important;
           clip-path: url(#shape-one) !important;
     border-top-right-radius: 40px !important; */
+   
     clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 42% 97%, 27% 71%, 0% 70%, 0% 35%, 20% 10%) !important;
 }
 .more-about-us .theme-shape-three {
@@ -1766,7 +1767,7 @@ footer .bottom-footer {padding: 25px 0 70px 0;}
 /*----------------------- End Hone Three Version -------------------*/
 /*------------------ Theme Inner Banner -----------------*/
 .inner-page-banner {
-  background: url(../images/home/about-us.jpg) no-repeat center;
+  background: url('https://partycakesnthings.com/wp-content/uploads/2020/04/Blog-Pintar-New-Website--2048x1365.jpg') no-repeat center;
   background-size: cover;
   background-attachment: fixed;
   position: relative;
@@ -3792,9 +3793,12 @@ footer .bottom-footer {padding: 25px 0 70px 0;}
 #part-one .card .card-name h4{
   color: #fff;
   font-size: 17px; }
-.camera_caption h1{
-  width: 50%;
-}
+  #theme-main-banner .camera_caption h1{
+  width: 50%; }
+  h1.props-name{
+   font-weight: 400 !important;
+   width: 60% !important;
+  }
   @media only screen and (max-width: 992px) {
     #theme-main-banner .camera_caption h1{
       font-size: 25px;
@@ -3918,32 +3922,44 @@ footer .bottom-footer {padding: 25px 0 70px 0;}
   align-items: center;
 }
 .paper{
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   width: 50%;
   height: 80%;
-  border-radius: 4px;
   outline: none;
   background-color: white;
   padding: 40px;
+}
+.modal-close-icon{
+  position: absolute;
+  right: 60px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  width: 30px !important;
+  height: 30px !important;
+  top: 65px;
+  font-size: 100px; }
+.modal-close-icon:hover{
+  color: #159475;
 }
 .form-group label{
   font-family: 'Poppins', sans-serif;
 }
 .paper h2{
-  margin-bottom: 60px;
-}
+  margin-bottom: 60px; }
 .paper .form-group .form-control{
   outline: none;
   height: 40px;
-  width:400px;
+  
+  width:48%;
   font-family: 'Poppins', sans-serif;
 }
+
 .paper .btn-group{
- 
-  width: 100%;
+ width: 100%;
   text-align: center;
   margin-top: 50px;
 }
@@ -3955,15 +3971,19 @@ footer .bottom-footer {padding: 25px 0 70px 0;}
   border: none;
   border-radius: 5px;
   outline: none;
-  background-color: #159475;
-}
-
+  background-color: #159475; }
 @media screen and (max-width: 992px){
   .paper{
-    width: 80%;
+    width: 83%;
   }
   .paper .form-group .form-control{
-    width: 100%;
+    width: 48%;
+    margin-left: 0px;
+  }
+  .paper .form-group .form-input{
+    width: 48%;
+    margin-top: 20px;
+    margin-left: 0px;
   }
 }
 
@@ -3983,7 +4003,6 @@ footer .bottom-footer {padding: 25px 0 70px 0;}
   position: relative;
   z-index: 1;
   width: 100%;
- 
   display: flex !important;
   justify-content: space-between !important;
   align-items: center !important;

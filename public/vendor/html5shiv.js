@@ -172,7 +172,7 @@
         i = 0,
         elems = getElements(),
         l = elems.length;
-    for(;i<l;i++){
+    for(i=0;i<l;i++){
         clone.createElement(elems[i]);
     }
     return clone;

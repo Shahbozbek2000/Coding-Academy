@@ -9,7 +9,7 @@ export  function FullStackHeader(props) {
         <div className="camera_caption">
           <div className="container">
             <h5 className="wow fadeInUp animated">{props.name}</h5>
-            <h1 className="wow fadeInUp animated" data-wow-delay="0.2s">
+            <h1 className="wow fadeInUp animated props-name" data-wow-delay="0.2s">
             {props.title}
             </h1>
             <a href="/fullstack" className="tran3s hvr-trim wow fadeInUp
@@ -22,7 +22,7 @@ export  function FullStackHeader(props) {
         <div className="camera_caption">
           <div className="container">
             <h5 className="wow fadeInUp animated">{props.name}</h5>
-            <h1 className="wow fadeInUp animated" data-wow-delay="0.2s">
+            <h1 className="wow fadeInUp animated props-name" data-wow-delay="0.2s">
               {props.title}
             </h1>
             <a href="/fullstack" className="tran3s hvr-trim wow fadeInUp

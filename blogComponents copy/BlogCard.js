@@ -38,25 +38,23 @@ const blogCards = [
 export function BlogCard() {
   return (
     <div className={blogCardStyles.blogCard_wrapper}>
-      <div className="container-fluid mb-5" style={{width:'88%'}}>
+      <div className="container-fluid mb-5" style={{ width: "88%" }}>
         <div className="row">
-        {
-           blogCards.map((card, index) => (
-               <div className='col-lg-3 col-sm-6 col-md-6 col-12' key={index}>
-                 <div className={blogCardStyles.card}>
-                   <div className={blogCardStyles.card_image}>
-                      <img src={card.image} alt={card.title} />
-                   </div>
-                   <div className={blogCardStyles.card_body}>
-                     <h5>{card.title}</h5>
-                   </div>
-                   <div className={blogCardStyles.card_footer}>
-                     <p>{card.info}</p>
-                   </div>
-                 </div>
-               </div>
-           ))
-        }
+          {blogCards.map((card, index) => (
+            <div className="col-lg-3 col-sm-6 col-md-6 col-12" key={index}>
+              <div className={blogCardStyles.card}>
+                <div className={blogCardStyles.card_image}>
+                  <img src={card.image} alt={card.title} />
+                </div>
+                <div className={blogCardStyles.card_body}>
+                  <h5>{card.title}</h5>
+                </div>
+                <div className={blogCardStyles.card_footer}>
+                  <p>{card.info}</p>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </div>

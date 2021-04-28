@@ -49,7 +49,7 @@ export function Robototechnics() {
                   <div className="button-wrapper p-bg-color">
                     <span>Kurs haqida</span>
                     <a
-                      href="about-us.html"
+                      href="/robo-kids"
                       className="hvr-icon-wobble-horizontal"
                     >
                       Ko'proq Ma'lumot
@@ -66,5 +66,5 @@ export function Robototechnics() {
         </div>
       </div>
     </div>
-  );
+  )
 }
