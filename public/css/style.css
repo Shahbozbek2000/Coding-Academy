@@ -779,61 +779,6 @@ header.theme-menu-wrapper.menu-style-three.fixed #mega-menu-wrapper .nav>li>a {p
   z-index: 9;
 }
 .banner-three .container a.button-two:hover:after {width: 100%;}
-.banner-three .watch-video {
-  display: inline-block;
-  -webkit-transform:rotate(-90deg);
-          transform:rotate(-90deg);
-  padding-left: 95px;
-}
-.banner-three .watch-video a i:before {
-  -webkit-transform:rotate(90deg);
-          transform:rotate(90deg);
-}
-.banner-three .watch-video h6 {color: #cfcfcf;}
-.banner-three .watch-video h4 {
-  font-weight: 600;
-  text-transform: uppercase;
-  color: #26292e;
-  margin-top: 7px;
-}
-.banner-three .watch-video a {
-  width: 36px;
-  height: 36px;
-  text-align: center;
-  border: 2px solid #0dda8f;
-  line-height: 32px;
-  border-radius: 50%;
-  color: #0dda8f;
-  font-size: 15px;
-  position: absolute;
-  left:2px;
-  top:0;
-  z-index: 1;
-}
-.banner-three .watch-video a:before,
-.banner-three .watch-video a:after {
-  content: '';
-  position: absolute;
-  border-radius: 50%;
-}
-.banner-three .watch-video a:before{
-  top:-10px;
-  right: -10px;
-  bottom: -10px;
-  left:-10px;
-  border: 2px solid rgba(0,228,135,0.35);
-  -webkit-animation: hvr-ripple-out 1.2s ease-in-out infinite;
-  animation: hvr-ripple-out 1.2s ease-in-out infinite;
-}
-.banner-three .watch-video a:after{
-  top:-20px;
-  right: -20px;
-  bottom: -20px;
-  left:-20px;
-  border: 2px solid rgba(0,228,135,0.15);
-  -webkit-animation: hvr-ripple-out-two 1.2s ease-in-out infinite;
-  animation: hvr-ripple-out-two 1.2s ease-in-out infinite;
-}
 .banner-three .play-option {
   position: absolute;
   left: -25%;
@@ -3814,7 +3759,7 @@ footer .bottom-footer {padding: 25px 0 70px 0;}
       text-align: justify;
     }
   }
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 676px) {
   .banner-two .camera_caption .props-name{
     width: 100% !important;
     font-size: 16px !important;
@@ -3934,40 +3879,41 @@ footer .bottom-footer {padding: 25px 0 70px 0;}
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 50%;
-  height: 80%;
+  width: 40%;
+  height: auto;
   outline: none;
+  border-radius: 25px;
   background-color: white;
   padding: 40px;
 }
 .modal-close-icon{
   position: absolute;
-  right: 60px;
+  right: 20px;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
   width: 30px !important;
   height: 30px !important;
-  top: 65px;
+  top: 47px;
   font-size: 100px; }
 .modal-close-icon:hover{
   color: #159475;
 }
-.form-group label{
-  font-family: 'Poppins', sans-serif;
-}
+
 .paper h2{
   margin-bottom: 60px; }
 .paper .form-group .form-control{
   outline: none;
-  height: 40px;
-  width:48%;
+  height: 50px;
+  text-indent: 20px;
+  border-radius: 5px;
+  width:300px !important;
   font-family: 'Poppins', sans-serif;
 }
 
 .paper .btn-group{
  width: 100%;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 .paper .btn-group button{
   display: inline-block;
@@ -3977,53 +3923,20 @@ footer .bottom-footer {padding: 25px 0 70px 0;}
   border: none;
   border-radius: 5px;
   outline: none;
-  background-color: #159475; }
-@media screen and (max-width: 992px){
-  .paper{
-    width: 83%;
-  }
-  .paper h2{
-    font-size: 20px !important;
-  }
-  .paper .form-group .form-control{
-    width: 48%;
-    margin-left: 0px;
-  }
-  .paper .form-group .form-input{
-    width: 48%;
-    margin-top: 20px;
-    margin-left: 0px;
-  }
+  background-color: #159475;
+ 
 }
 
 
-@media only screen and (max-width: 606px) {
-   .paper{
-     height: auto !important;
-     padding-top: 0px !important;
-   }
-  .paper .form-group .form-control{
-    width: 100% !important;
-    height: 40px !important;
-    font-size: 14px !important
+@media only screen and (max-width: 992px) {
+  .paper{
+    width: 60%;
   }
+}
+
+@media only screen and (max-width: 676px) {
   .paper h2{
-    margin-bottom: 0px !important;
-  }
-  .paper .btn-group{
-    margin-top: 30px !important;
-  }
-  .paper .form-group .form-input{
-    width: 100% !important;
-    margin-left: 0px !important;
-    font-size: 14px !important;
-    height: 40px !important;
-    margin-top: 30px !important;
-  }
-  .modal-close-icon{
-    position: absolute;
-    top: 20px;
-    right: 0px;
+    font-size: 20px;
   }
 }
 

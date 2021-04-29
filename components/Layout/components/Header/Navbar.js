@@ -18,18 +18,23 @@ import axios from 'axios'
 export function Navbar(props) {
   const [open, setOpen] = useState(false)
   const [value, setValue] = useState(new Date())
-  const [qiymat, setQiymat] = useState({
-    firstName:'',
-    lastName:'',
-    MobileNumber: '',
-    selectOption:'',
-    Date: ''
+
+  // const [posts, setPosts] = useState({
+  //   firstName: '',
+  //   lastName: '',
+  //   MobileNumber:'',
+  //   selectOption: '',
+  //   Date: ''
+  // })
+  const [posts, setPosts] = useState({
+    firstName: '',
+    lastName: '',
+    selectOption: '',
+    date: ''
+
   })
  
-  const [state, setState] = useState({
-    age: '',
-    name: '',
-  })
+ 
   const router = useRouter()
   const pathname = router.pathname
 
@@ -44,8 +49,8 @@ export function Navbar(props) {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    console.log(state)
-    axios.post('https://jsonplaceholder.typicode.com/posts', state)
+    console.log(posts)
+    axios.post('https://jsonplaceholder.typicode.com/posts', posts)
     .then(res => {
       console.log(res)
     })
@@ -54,31 +59,37 @@ export function Navbar(props) {
     })
   }
 
-  const useStyles = makeStyles((theme) => ({
-    formControl: {
-      margin: theme.spacing(1),
-      minWidth: 120,
-    },
-    selectEmpty: {
-      marginTop: theme.spacing(2),
-    },
-  }))
+  
 
   const changeHandler = (e) => {
     e.preventDefault()
-    setQiymat({[e.target.name]: e.target.value})
-  }
-
-  const handleChange = (event) => {
-    const name = event.target.name
-    
-    setState({
-      ...state,
-      [name]: event.target.value,
+    setPosts({
+      ...posts,
+      [e.target.name]: e.target.value
     })
   }
 
-  const {firstName, lastName, MobileNumber, selectOption} = state
+
+
+  // const changeHandler = (e) => {
+  //   e.preventDefault()
+  //   setPosts({
+  //     ...posts,
+  //     [e.target.name]: e.target.value 
+  //   })
+  // }
+
+  // const handleChange = (event) => {
+  //   const name = event.target.name
+    
+  //   setState({
+  //     ...state,
+  //     [name]: event.target.value,
+  //   })
+  // }
+
+  // const {firstName, lastName, MobileNumber, selectOption} = posts
+  const {firstName, lastName, selectOption, date} = posts
   return (
     <div>
       <header
@@ -197,87 +208,39 @@ export function Navbar(props) {
                       <CloseIcon className='modal-close-icon' 
                       onClick={handleClose} />
                         <h2> Ro'yxatdan o'tish </h2>
+                       <form onSubmit={handleSubmit}>
+                          <div className='form-group'>
+                            <input type='text' className='form-control' 
+                            placeholder='Ismingiz' name='firstName'
+                            value={firstName}
+                            onChange={changeHandler}  />
+                          </div>
+                          <div className='form-group'>
+                            <input type='text' className='form-control'
+                            placeholder='Familiyangiz' name='lastName'
+                            value={lastName}
+                            onChange={changeHandler} />
+                          </div>
+                          <div className='form-group'>
+                          
+                             <select className='form-control' onChange={changeHandler}
+                             name='selectOption' value={selectOption}>
+                             
+                               <option value='Web Dasturlash'>Web Dasturlash</option>
+                               <option value='Flutter'>Flutter</option>
+                               <option value= 'Python'>Python</option>
+                             </select>
+                          </div>
+                          <div className='form-group'>
+                             <input type='date' className='form-control'
+                             onChange={changeHandler} name='Date'
+                              />
+                          </div>
+                          <div className='btn-group'>
+                            <button type='submit' className='form-btn'>Jo'natish</button>
+                          </div>
+                       </form>
                        
-                        <form onSubmit={handleSubmit}>
-                          <div className="form-group">
-                            <TextField
-                              variant="outlined"
-                              className="form-control form-input"
-                              label="Ismingiz"
-                              type="text"
-                              onChange={changeHandler}
-                              name='firstName'
-                              value={firstName}
-                              required
-                            />
-                            <TextField
-                              variant="outlined"
-                              className="form-control form-input"
-                              label="Familiyangiz"
-                              type="text"
-                              required
-                              onChange={changeHandler}
-                              name='lastName'
-                              value={lastName}
-                              style={{marginLeft:'17px'}}
-                            />
-                          </div>
-                          <br />
-                          <div className="form-group">
-                            <TextField
-                              variant="outlined"
-                              className="form-control"
-                              name='MobileNumber'
-                              value={MobileNumber}
-                              onChange={changeHandler}
-                              label="Telefon raqamingiz"
-                              style={{ width: '100%' }}
-                              type='tel'
-                            />
-                          </div>
-                          <br />
-                          <div className="form-group">
-                            <FormControl
-                              variant="outlined"
-                              className="form-control"
-                              name='selectOption'
-                              onChange={handleChange}
-                              value={selectOption}
-                            >
-                              <InputLabel htmlFor="outlined-age-native-simple">
-                              Kurslar
-                              </InputLabel>
-                              <Select
-                                native
-                                value={state.age}
-                                onChange={handleChange}
-                                label="Age"
-                                inputProps={{
-                                  name: 'age',
-                                  id: 'outlined-age-native-simple',
-                                }}
-                              >
-                                <option aria-label="None" value="" />
-                                <option value={10}> Web Development </option>
-                                <option value={20}> Python </option>
-                                <option value={30}> Flutter </option>
-                              </Select>
-
-                            </FormControl>
-                          <TextField
-                           type='date'
-                           variant='outlined'
-                           style={{marginLeft:'17px'}}
-                           name='Date'
-                           value={Date}
-                           onChange={handleChange}
-                           className='form-control form-input'
-                          />
-                          </div>
-                          <div className="btn-group m-auto">
-                            <button type="submit"> Login </button>
-                          </div>
-                        </form>
                       </div>
                     </Fade>
                   </Modal>
