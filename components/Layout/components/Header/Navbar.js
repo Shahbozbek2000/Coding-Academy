@@ -124,7 +124,7 @@ export function Navbar(props) {
                     </a>
                     <ul className="sub-menu">
                       <li className="dropdown-holder menu-list">
-                        <a href="/" className="tran3s">
+                        <a href="/fullstack" className="tran3s">
                           Dasturlash
                         </a>
                         <ul className="sub-menu-one">
@@ -142,7 +142,9 @@ export function Navbar(props) {
                         <a href="/robo-kids"> Robo kids </a>
                       </li>
                       <li>
-                        <a href="/english"> English </a>
+                      <a href='/english'>
+                        English 
+                      </a>
                       </li>
                       <li>
                         <a href="/"> Scratch </a>

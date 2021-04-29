@@ -3,9 +3,7 @@ import React from 'react'
 export  function AboutPanel() {
     return (
         <div>
-        
-                                        
-        <section id="part-one">
+    <section id="part-one">
         <div className="container">
             <div className="col-lg-4 col-sm-12 col-md-4 col-12">
                 <div className="card" style={{backgroundColor:'#75B74F'}}>

@@ -218,7 +218,7 @@
 }
 
 @media (max-width: 550px) {
-  .pricing-plan-one .tab-content .left-side,.pricing-plan-one .tab-content .right-side {width: 100%;}
+  .pricing-plan-one .tab-content .left-side, .pricing-plan-one .tab-content .right-side {width: 100%;}
   .banner-one h1,.banner-two h1,.banner-three .container h1 {font-size: 35px;line-height: 48px;}
   .banner-one h1 span:before {bottom: 10px;}
   .theme-modal-box .modal-content .modal-body form .wrapper {padding: 0;}
@@ -266,7 +266,7 @@
 }
 
 @media (max-width: 400px) {
-  .more-about-us .main-content h2 {font-size: 30px !important;line-height: 48px !important;}
+  .more-about-us .main-content h2 {font-size: 20px !important; line-height: 40px !important;}
   header.theme-menu-wrapper.menu-style-three #mega-menu-wrapper .nav .quote-button a {width: 100% !important;}
   .blog-details .blog-main-post h2 {font-size: 25px;padding-left: 40px !important;}
   .blog-details .blog-main-post h2:before {width: 35px !important;}
@@ -279,3 +279,60 @@
   .pricing-plan-one .tab-content .right-side {padding-left: 15px !important;}
   .theme-counter p {font-size: 20px !important; }
 }
+
+
+@media only screen and (max-width: 400px) {
+  .more-about-us .main-content .main-wrapper h4 {
+    line-height: 40px;
+    font-size: 22px !important;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .pricing-plan-one .theme-title h2{
+    font-size: 20px !important;
+    line-height: 1.5 !important;
+  }
+  .service-version-one .single-service{
+    text-align: center !important;
+
+  }
+  .pricing-plan-one .tab-content .left-side span{
+    margin-bottom: 40px !important;
+  }
+  .pricing-plan-one .tab-content .left-side {
+    width: 100% !important;
+  }
+  .pricing-plan-one .tab-content .right-side{
+    width: 100% !important;
+  }
+  .career-info .container h2{
+    font-size: 16px !important;
+    width: 100% !important;
+    text-align: justify;
+    line-height: 1.7;
+  }
+  .career-left p{
+    font-size: 14px !important;
+  }
+  .development-wrapper .container h2{
+    font-size: 20px !important;
+  }
+  .development-wrapper .container p{
+    font-size: 14px !important;
+  }
+  .development-wrapper .container .game-development h3{
+    font-size: 18px !important;
+    width: 100% !important;
+    margin-bottom: 20px !important;
+  }
+  .development-wrapper .container .game-development p{
+    font-size: 14px !important;
+    padding: 0px !important;
+  }
+}
+
+
+
+
+
+

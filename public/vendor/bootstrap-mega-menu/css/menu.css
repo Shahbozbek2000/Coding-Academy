@@ -92,7 +92,7 @@
 @media (max-width: 991px) { /*---- Set Mobile breakpoint -----*/
   #mega-menu-wrapper .navbar-toggle {
     display: block !important;
-    margin: 0 0 20px 0 !important;
+    margin: 10px 0 20px 0 !important;
     padding: 0 !important;
     min-height: 28px !important;
   }
@@ -143,6 +143,7 @@
   #mega-menu-wrapper .nav>li {
     float: none;
     display: block;
+    margin-bottom: 10px;
   }
   #mega-menu-wrapper .nav>li.dropdown-holder .sub-menu,
   #mega-menu-wrapper .nav>li.dropdown-holder .sub-menu .second-sub-menu {
