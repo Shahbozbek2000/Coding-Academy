@@ -3906,7 +3906,7 @@ footer .bottom-footer {padding: 25px 0 70px 0;}
   height: 50px;
   text-indent: 20px;
   border-radius: 5px;
-  width:300px !important;
+  width:300px;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -3938,9 +3938,31 @@ footer .bottom-footer {padding: 25px 0 70px 0;}
   .paper h2{
     font-size: 20px;
   }
+  .paper .form-control{
+    width: 100% !important;
+  }
 }
 
-
+@media screen and (max-width: 576px) {
+  .paper{
+    width: 80% !important;
+  }
+  .paper h2{
+   margin-top: 0px;
+   margin-bottom: 20px;
+  }
+  .paper .form-control[type=date] {
+    display: none !important;
+  }
+  .paper .modal-close-icon{
+    position: absolute;
+    top: 30px;
+    width: 20px;
+    height: 20px;
+  }
+  
+}
+ 
 .tab-set {
   padding: 20px;
   border: 1px solid #a5acb1;

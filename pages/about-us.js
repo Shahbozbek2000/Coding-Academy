@@ -3,7 +3,6 @@ import  Head  from "next/head";
 import { AboutCounter } from "../AboutUsComponents/AboutCounter";
 import { AboutHeader } from "../AboutUsComponents/AboutHeader";
 import { AboutPanel } from "../AboutUsComponents/AboutPanel";
-import AboutTabs from "../AboutUsComponents/AboutTabs";
 import { AboutText } from "../AboutUsComponents/AboutText";
 import FullStackMentors from "../fullStackComponent/FullStackMentors";
 
@@ -21,7 +20,7 @@ export default function About_us() {
       <body>
         <AboutHeader />
         <AboutText />
-        <AboutTabs />
+        
         <AboutCounter />
         <FullStackMentors
           image="https://expertnov.ru/800/600/https/howyoutube.ru/wp-content/uploads/2018/11/Image1542350522757.jpeg"
