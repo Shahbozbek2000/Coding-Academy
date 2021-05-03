@@ -2,7 +2,7 @@ import React from "react";
 import Head from "next/head";
 import { FullStackHeader } from "../fullStackComponent/FullStackHeader";
 import FullStackCard from "../fullStackComponent/FullStackCard";
-import { FullStactTabs } from "../fullStackComponent/FullStactTabs";
+import {FullStactTabs} from '../fullStackComponent/FullStactTabs'
 import { FullStackService } from "../fullStackComponent/FullStackService";
 import FullStackMentors from "../fullStackComponent/FullStackMentors";
 import FullStackPlan from "../fullStackComponent/FullStackPlan";

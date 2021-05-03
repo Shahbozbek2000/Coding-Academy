@@ -1,8 +1,8 @@
 import Head from "next/head";
-import { HomePage } from "../components/Layout/components/HomePage";
+import { HomePage } from "../components/Layout/components/HomePage"
 
 
-export const config  =  {unstable_runtimeJS:false}
+
 export default function Home() {
   return (
     <>

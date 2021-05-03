@@ -5,11 +5,11 @@ export function Header() {
         <div className="camera_caption">
             <div className="container">
                 <h5 className="wow fadeInUp animated"> Web Development </h5>
-                <h1 className="wow fadeInUp animated" data-wow-delay="0.2s">
+                <h1 className="wow fadeInUp animated course-name" data-wow-delay="0.2s">
                     O 'zingiz hohlagan web sahifalarni endilikda 
                     o'z qo 'lingiz bilan yaratishingiz va kelajak kasbini
                      6 oyda egallashingiz mumkin </h1>
-                <a href="/fullstack" className="tran3s hvr-trim wow fadeInUp
+                <a href="/full-stack" className="tran3s hvr-trim wow fadeInUp
         animated p-bg-color button-one " data-wow-delay="0.3s">
                     Batafsil </a>
                 <div className="wow fadeInRight animated image-shape-one" data-wow-delay="0.33s">
@@ -36,7 +36,7 @@ export function Header() {
         <div className="camera_caption">
             <div className="container">
                 <h5 className="wow fadeInUp animated"> Robototexnika </h5>
-                <h1 className="wow fadeInUp animated" data-wow-delay="0.2s">
+                <h1 className="wow fadeInUp animated course-name" data-wow-delay="0.2s">
                     Dasturlash orqali Robotlar yasashni va harakatga keltirishni endi siz ham o 'rganing
                 </h1>
                 <a href="/robo-kids" className="tran3s hvr-trim wow fadeInUp
@@ -65,10 +65,9 @@ export function Header() {
         <div className="camera_caption">
             <div className="container">
                 <h5 className="wow fadeInUp animated"> Ingliz tili </h5>
-                <h1 className="wow fadeInUp animated" data-wow-delay="0.2s">
+                <h1 className="wow fadeInUp animated  course-name" data-wow-delay="0.2s">
                     Ingliz tilini Chet el Universitetlarida tahsil olgan o 'qituvchilar
-                    qo 'lida o'
-                    rganing
+                    qo 'lida o'rganing
                 </h1>
                 <a href="/english" className="tran3s hvr-trim wow fadeInUp
         animated p-bg-color button-one " data-wow-delay="0.3s">

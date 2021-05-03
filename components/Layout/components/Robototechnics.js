@@ -1,7 +1,7 @@
 export function Robototechnics() {
   return (
     <div>
-      <div className="more-about-us mt-5">
+      <div className="more-about-us">
         <div className="image-box">
           <svg
             version="1.1"

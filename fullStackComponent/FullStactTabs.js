@@ -40,14 +40,9 @@ function a11yProps(index) {
   };
 }
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-    backgroundColor: theme.palette.background.paper,
-  },
-}));
+
 export function FullStactTabs() {
-  const classes = useStyles();
+ 
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
@@ -93,7 +88,7 @@ export function FullStactTabs() {
         </AppBar>
         <div className="row">
           <TabPanel value={value} index={0}>
-            <div className="col-lg-6 col-sm-6 col-12 col-md-6 col-12">
+            <div className="col-lg-6 col-sm-6  col-md-6 col-6">
               <div className="programming-wrapper">
                 <div className="programming-wrapper-image">
                   <img
@@ -110,7 +105,7 @@ export function FullStactTabs() {
                 </div>
               </div>
             </div>
-            <div className="col-lg-6 col-sm-6 col-12 col-md-6 col-12">
+            <div className="col-lg-6 col-sm-6  col-md-6 col-6">
               <div className="programming-wrapper">
                 <div className="programming-wrapper-image">
                   <img
@@ -130,7 +125,7 @@ export function FullStactTabs() {
           </TabPanel>
 
           <TabPanel value={value} index={1}>
-            <div className="col-lg-6 col-sm-6 col-12 col-md-6 col-12">
+            <div className="col-lg-6 col-sm-6  col-md-6 col-6">
               <div className="programming-wrapper">
                 <div className="programming-wrapper-image">
                   <img
@@ -147,7 +142,7 @@ export function FullStactTabs() {
                 </div>
               </div>
             </div>
-            <div className="col-lg-6 col-sm-6 col-12 col-md-6 col-12">
+            <div className="col-lg-6 col-sm-6  col-md-6 col-6">
               <div className="programming-wrapper">
                 <div className="programming-wrapper-image">
                   <img
@@ -184,7 +179,7 @@ export function FullStactTabs() {
             </section>
           </TabPanel>
           <TabPanel value={value} index={3}>
-            <div className="col-lg-6 col-sm-6 col-12 col-md-6 col-12">
+            <div className="col-lg-6 col-sm-6  col-md-6 col-6">
               <div className="programming-wrapper">
                 <div className="programming-wrapper-image">
                   <img
@@ -200,7 +195,7 @@ export function FullStactTabs() {
                 </div>
               </div>
             </div>
-            <div className="col-lg-6 col-sm-6 col-12 col-md-6 col-12">
+            <div className="col-lg-6 col-sm-6  col-md-6  col-6">
               <div className="programming-wrapper">
                 <div className="programming-wrapper-image">
                   <img
@@ -219,7 +214,7 @@ export function FullStactTabs() {
             </div>
           </TabPanel>
           <TabPanel value={value} index={4}>
-            <div className="col-lg-6 col-sm-6 col-12 col-md-6 col-12">
+            <div className="col-lg-6 col-sm-6 col-md-6  col-6">
               <div className="programming-wrapper">
                 <div className="programming-wrapper-image">
                   <img
@@ -237,7 +232,7 @@ export function FullStactTabs() {
                 </div>
               </div>
             </div>
-            <div className="col-lg-6 col-sm-6 col-12 col-md-6 col-12">
+            <div className="col-lg-6 col-sm-6   col-md-6 col-6">
               <div className="programming-wrapper">
                 <div className="programming-wrapper-image">
                   <img
@@ -260,7 +255,7 @@ export function FullStactTabs() {
             </div>
           </TabPanel>
           <TabPanel value={value} index={5}>
-            <div className="col-lg-6 col-sm-6 col-12 col-md-6 col-12">
+            <div className="col-lg-6 col-sm-6 col-md-6 col-6">
               <div className="programming-wrapper">
                 <div className="programming-wrapper-image">
                   <img
@@ -280,7 +275,7 @@ export function FullStactTabs() {
                 </div>
               </div>
             </div>
-            <div className="col-lg-6 col-sm-6 col-12 col-md-6 col-12">
+            <div className="col-lg-6 col-sm-6 col-md-6 col-6">
               <div className="programming-wrapper">
                 <div className="programming-wrapper-image">
                   <img

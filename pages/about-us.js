@@ -6,7 +6,7 @@ import { AboutPanel } from "../AboutUsComponents/AboutPanel";
 import { AboutText } from "../AboutUsComponents/AboutText";
 import FullStackMentors from "../fullStackComponent/FullStackMentors";
 
-export default function About_us() {
+export default function aboutUs() {
   return (
     <>
       <Head>

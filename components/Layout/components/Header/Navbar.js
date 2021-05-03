@@ -4,36 +4,23 @@ import { useRouter } from 'next/router'
 import Modal from '@material-ui/core/Modal'
 import Backdrop from '@material-ui/core/Backdrop'
 import Fade from '@material-ui/core/Fade'
-import { TextField } from '@material-ui/core'
-import { makeStyles } from '@material-ui/core/styles'
-import InputLabel from '@material-ui/core/InputLabel'
-import FormControl from '@material-ui/core/FormControl'
-import Select from '@material-ui/core/Select'
 import CloseIcon from '@material-ui/icons/Close'
 import axios from 'axios'
+import PhoneInput from 'react-phone-input-2'
+// import 'react-phone-input-2/lib/style.css'
 
-
-
-
-export function Navbar(props) {
+export function Navbar() {
   const [open, setOpen] = useState(false)
-  const [value, setValue] = useState(new Date())
+ 
 
-  // const [posts, setPosts] = useState({
-  //   firstName: '',
-  //   lastName: '',
-  //   MobileNumber:'',
-  //   selectOption: '',
-  //   Date: ''
-  // })
   const [posts, setPosts] = useState({
     firstName: '',
     lastName: '',
     selectOption: '',
-    date: ''
+    Tel:'',
+    phone:''
 
   })
- 
  
   const router = useRouter()
   const pathname = router.pathname
@@ -45,9 +32,9 @@ export function Navbar(props) {
   const handleClose = () => {
     setOpen(false)
   }
+  
  
-
-  const handleSubmit = (e) => {
+const handleSubmit = (e) => {
     e.preventDefault()
     console.log(posts)
     axios.post('https://jsonplaceholder.typicode.com/posts', posts)
@@ -59,8 +46,6 @@ export function Navbar(props) {
     })
   }
 
-  
-
   const changeHandler = (e) => {
     e.preventDefault()
     setPosts({
@@ -69,27 +54,7 @@ export function Navbar(props) {
     })
   }
 
-
-
-  // const changeHandler = (e) => {
-  //   e.preventDefault()
-  //   setPosts({
-  //     ...posts,
-  //     [e.target.name]: e.target.value 
-  //   })
-  // }
-
-  // const handleChange = (event) => {
-  //   const name = event.target.name
-    
-  //   setState({
-  //     ...state,
-  //     [name]: event.target.value,
-  //   })
-  // }
-
-  // const {firstName, lastName, MobileNumber, selectOption} = posts
-  const {firstName, lastName, selectOption, date} = posts
+const {firstName, lastName, selectOption, Tel} = posts
   return (
     <div>
       <header
@@ -130,7 +95,7 @@ export function Navbar(props) {
               <div className="collapse navbar-collapse" id="navbar-collapse-1">
                 <ul className="nav">
                   <li className="dropdown-holder menu-list active">
-                    <a href="/" className="tran3s">
+                    <a href="/full-stack" className="tran3s">
                       Kurslar
                     </a>
                     <ul className="sub-menu">
@@ -140,7 +105,7 @@ export function Navbar(props) {
                         </a>
                         <ul className="sub-menu-one">
                           <li>
-                            <a href="/fullstack">Full Stack development </a>
+                            <a href="/full-stack">Full Stack development </a>
                           </li>
                           <li>
                             <Link href="/bootcamp">
@@ -188,7 +153,7 @@ export function Navbar(props) {
                   </li>
                   <li className="login-button" style={{ cursor: 'pointer' }}>
                     <a className="tran3s" onClick={handleOpen}>
-                      Ro 'yxatdan o' tish
+                      Bog'lanish
                     </a>
                   </li>
                   <Modal
@@ -207,7 +172,9 @@ export function Navbar(props) {
                       <div className="paper">
                       <CloseIcon className='modal-close-icon' 
                       onClick={handleClose} />
-                        <h2> Ro'yxatdan o'tish </h2>
+                        <h2> Biz bilan bog'laning</h2>
+                        <p>Iltimos, biz bilan bog'laning. Administratorimiz
+                        bilan aloqaga chiqing </p>
                        <form onSubmit={handleSubmit}>
                           <div className='form-group'>
                             <input type='text' className='form-control' 
@@ -229,12 +196,18 @@ export function Navbar(props) {
                                <option value='Web Dasturlash'>Web Dasturlash</option>
                                <option value='Flutter'>Flutter</option>
                                <option value= 'Python'>Python</option>
+                               <option value='Robototexnika'>Robototexnika</option>
+                               <option value="Ingliz tili">Ingliz tili</option>
                              </select>
                           </div>
                           <div className='form-group'>
-                             <input type='date' className='form-control'
-                             onChange={changeHandler} name='Date'
-                              />
+                            
+                          <PhoneInput
+                          country={'uz'}
+                          value={posts.phone}
+                          onChange={phone => setPosts({ phone })}
+                        />
+                              
                           </div>
                           <div className='btn-group'>
                             <button type='submit' className='form-btn'>Jo'natish</button>
