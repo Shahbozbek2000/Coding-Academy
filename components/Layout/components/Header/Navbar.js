@@ -53,7 +53,7 @@ const handleSubmit = (e) => {
     })
   }
 
-const {firstName, lastName, selectOption, phone} = posts
+const {firstName, lastName, programming, phone} = posts
   return (
     <div>
       <header
@@ -186,7 +186,7 @@ const {firstName, lastName, selectOption, phone} = posts
                           <div className='form-group'>
                           
                              <select className='form-control' onChange={changeHandler}
-                             name='selectOption' value={programming}>
+                             name='programming' value={programming}>
                              
                                <option value='Web Dasturlash'>Web Dasturlash</option>
                                <option value='Flutter'>Flutter</option>
