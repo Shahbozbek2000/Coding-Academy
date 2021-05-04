@@ -28,7 +28,7 @@ export  function OurCompany() {
                             <p>Their testimonial videos aren't production quality, but they
                                 get
                                 message across, cover useful & relevant information with tips.</p>
-                            <a href="blog-details.html" className="tran3s
+                            <a href="/blog" className="tran3s
                                 hvr-icon-wobble-horizontal">More Details <i className="fa
                                     fa-long-arrow-right" aria-hidden="true"></i></a>
                         </div>
@@ -80,7 +80,7 @@ export  function OurCompany() {
                             <p>Their testimonial videos aren't production quality, but they
                                 get
                                 message across, cover useful & relevant information with tips.</p>
-                            <a href="blog-details.html" className="tran3s
+                            <a href="/blog" className="tran3s
                                 hvr-icon-wobble-horizontal">More Details <i className="fa
                                     fa-long-arrow-right" aria-hidden="true"></i></a>
                         </div>
@@ -106,7 +106,7 @@ export  function OurCompany() {
                             <p>Their testimonial videos aren't production quality, but they
                                 get
                                 message across, cover useful & relevant information with tips.</p>
-                            <a href="#" className="tran3s
+                            <a href="/blog" className="tran3s
                                 hvr-icon-wobble-horizontal">More Details <i className="fa
                                     fa-long-arrow-right" aria-hidden="true"></i></a>
                         </div>

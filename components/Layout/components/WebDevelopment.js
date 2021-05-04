@@ -1,6 +1,6 @@
 import React from 'react'
 
-export  function WebDevelopment() {
+export  function WebDevelopment() { 
     return (
         <div className="more-about-us">
         <div className="image-box">
@@ -25,7 +25,11 @@ export  function WebDevelopment() {
                             <h2>Web development bu yangi kareeraga kirish uchun eng ishonchli
                                 kalitdir</h2>
                             <div className="main-wrapper">
-                                <h4>Nega Dasturlash va nega Web?</h4>
+                                <h4>
+                                <img  style={{width:"70px", position:'absolute',
+                            left: '-120px', marginLeft:'60px', top:'-15px'}}
+                                src="https://www.flaticon.com/svg/vstatic/svg/1197/1197414.svg?token=exp=1620047347~hmac=4742cdfaabf6b54eccb984dee10696b2" alt=""/>
+                               <span style={{marginLeft:'40px'}}> Web Dasturlash nima uchun kerak?</span></h4>
                                 <p>
                                     Jahon statistikasiga asosan Dasturlash bo’yicha ish joyining
                                     yillik o’sishi 23% ga tengdir, va dunyoda o’rtacha ish joy o’sishi
@@ -40,7 +44,7 @@ export  function WebDevelopment() {
 
                                 <div className="button-wrapper p-bg-color">
                                     <span>Kurs haqida</span>
-                                    <a href="/fullstack" className="hvr-icon-wobble-horizontal">
+                                    <a href="/full-stack" className="hvr-icon-wobble-horizontal">
                                         Ko'proq Ma'lumot <i className="fa fa-long-arrow-right"
                                             aria-hidden="true"></i></a>
                                 </div> 

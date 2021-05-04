@@ -4,7 +4,7 @@ export function Header() {
     <div data-src="images/home/slide-1.jpg">
         <div className="camera_caption">
             <div className="container">
-                <h5 className="wow fadeInUp animated"> Web Development </h5>
+                <h5 className="wow fadeInUp animated course-info"> Web Development </h5>
                 <h1 className="wow fadeInUp animated course-name" data-wow-delay="0.2s">
                     O 'zingiz hohlagan web sahifalarni endilikda 
                     o'z qo 'lingiz bilan yaratishingiz va kelajak kasbini
@@ -35,7 +35,7 @@ export function Header() {
     <div data-src="images/home/slide-1.jpg">
         <div className="camera_caption">
             <div className="container">
-                <h5 className="wow fadeInUp animated"> Robototexnika </h5>
+                <h5 className="wow fadeInUp animated course-info"> Robototexnika </h5>
                 <h1 className="wow fadeInUp animated course-name" data-wow-delay="0.2s">
                     Dasturlash orqali Robotlar yasashni va harakatga keltirishni endi siz ham o 'rganing
                 </h1>
@@ -64,7 +64,7 @@ export function Header() {
     <div data-src="images/home/slide-1.jpg">
         <div className="camera_caption">
             <div className="container">
-                <h5 className="wow fadeInUp animated"> Ingliz tili </h5>
+                <h5 className="wow fadeInUp animated course-info"> Ingliz tili </h5>
                 <h1 className="wow fadeInUp animated  course-name" data-wow-delay="0.2s">
                     Ingliz tilini Chet el Universitetlarida tahsil olgan o 'qituvchilar
                     qo 'lida o'rganing
