@@ -3823,10 +3823,13 @@ footer .bottom-footer {padding: 25px 0 70px 0;}
   color: #fff;
   font-size: 17px; }
   #theme-main-banner .camera_caption h1{
+  -webkit-width: 46.5%;  
   width: 46.5%; }
   h1.props-name{
    font-weight: 400 !important;
+   -webkit-font-weight: 400;
    width: 60% !important;
+   -webkit-width: 60%;
   }
   @media only screen and (max-width: 992px) {
     #theme-main-banner .camera_caption h1{

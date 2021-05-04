@@ -28,7 +28,7 @@ export  function WebDevelopment() {
                                 <h4>
                                 <img  style={{width:"70px", position:'absolute',
                             left: '-120px', marginLeft:'60px', top:'-15px'}}
-                                src="https://www.flaticon.com/svg/vstatic/svg/1197/1197414.svg?token=exp=1620047347~hmac=4742cdfaabf6b54eccb984dee10696b2" alt=""/>
+                                src="images/www.png" alt=""/>
                                <span style={{marginLeft:'40px'}}> Web Dasturlash nima uchun kerak?</span></h4>
                                 <p>
                                     Jahon statistikasiga asosan Dasturlash bo’yicha ish joyining
