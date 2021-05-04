@@ -16,8 +16,7 @@ export function Navbar() {
   const [posts, setPosts] = useState({
     firstName: '',
     lastName: '',
-    selectOption: '',
-    Tel:'',
+    programming: '',
     phone:''
 
   })
@@ -37,7 +36,7 @@ export function Navbar() {
 const handleSubmit = (e) => {
     e.preventDefault()
     console.log(posts)
-    axios.post('https://jsonplaceholder.typicode.com/posts', posts)
+    axios.post('https://coding2academy.herokuapp.com/create_student', posts)
     .then(res => {
       console.log(res)
     })
@@ -54,7 +53,7 @@ const handleSubmit = (e) => {
     })
   }
 
-const {firstName, lastName, selectOption, Tel} = posts
+const {firstName, lastName, selectOption, phone} = posts
   return (
     <div>
       <header
@@ -187,7 +186,7 @@ const {firstName, lastName, selectOption, Tel} = posts
                           <div className='form-group'>
                           
                              <select className='form-control' onChange={changeHandler}
-                             name='selectOption' value={selectOption}>
+                             name='selectOption' value={programming}>
                              
                                <option value='Web Dasturlash'>Web Dasturlash</option>
                                <option value='Flutter'>Flutter</option>
@@ -198,11 +197,8 @@ const {firstName, lastName, selectOption, Tel} = posts
                           </div>
                           <div className='form-group'>
                             
-                          <PhoneInput
-                          country={'uz'}
-                          value={posts.phone}
-                          onChange={phone => setPosts({ phone })}
-                        />
+                       <input type='tel' className='form-control'
+                       name='phone' value={phone} onChange={changeHandler} />
                               
                           </div>
                           <div className='btn-group'>
