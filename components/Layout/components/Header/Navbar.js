@@ -144,11 +144,7 @@ const {firstName, lastName, selectOption, Tel} = posts
                         <a> About Us </a>
                       </Link>
                       </li>
-                      <li>
-                      <Link href='/career'>
-                        <a> Career </a>
-                      </Link>
-                      </li>
+                     
                     </ul>
                   </li>
                   <li className="login-button" style={{ cursor: 'pointer' }}>

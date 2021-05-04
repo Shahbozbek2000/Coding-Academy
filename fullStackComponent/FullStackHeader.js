@@ -1,8 +1,9 @@
 import React from 'react'
-
+import RenderInBrowser from 'react-render-in-browser'
 
 export  function FullStackHeader(props) {
     return (
+      <RenderInBrowser chrome firefox safari only>
       <div id="theme-main-banner" className="banner-two">
       <div
         data-src={props.image}>
@@ -31,6 +32,6 @@ export  function FullStackHeader(props) {
         </div> 
       </div>
     </div> 
-       
+    </RenderInBrowser>
     )
 }

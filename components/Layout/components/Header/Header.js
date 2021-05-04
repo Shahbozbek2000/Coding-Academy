@@ -1,5 +1,8 @@
+import RenderInBrowser from 'react-render-in-browser'
+
 export function Header() {
     return ( 
+        <RenderInBrowser chrome firefox safari only>
         <div id="theme-main-banner" className="banner-one">
     <div data-src="images/home/slide-1.jpg">
         <div className="camera_caption">
@@ -91,6 +94,6 @@ export function Header() {
         </div>
     </div>
 </div>
-        
+</RenderInBrowser>   
     );
 }
