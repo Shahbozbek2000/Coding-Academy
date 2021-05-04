@@ -6,20 +6,23 @@ import Backdrop from '@material-ui/core/Backdrop'
 import Fade from '@material-ui/core/Fade'
 import CloseIcon from '@material-ui/icons/Close'
 import axios from 'axios'
-import PhoneInput from 'react-phone-input-2'
-// import 'react-phone-input-2/lib/style.css'
+
+
+
 
 export function Navbar() {
   const [open, setOpen] = useState(false)
  
 
   const [posts, setPosts] = useState({
-    firstName: '',
-    lastName: '',
+    first_name: '',
+    last_name: '',
     programming: '',
     phone:''
 
   })
+  const [loader, setLoader] = useState(false)
+  const [change, setChange] = useState("")
  
   const router = useRouter()
   const pathname = router.pathname
@@ -33,16 +36,22 @@ export function Navbar() {
   }
   
  
-const handleSubmit = (e) => {
-    e.preventDefault()
-    console.log(posts)
-    axios.post('https://coding2academy.herokuapp.com/create_student', posts)
+const handleSubmit = async (e) => {
+  setLoader(true)  
+  e.preventDefault()
+    // console.log(posts)
+   await axios.post(`https://coding2academy.herokuapp.com/create_student`, posts)
     .then(res => {
       console.log(res)
+      setLoader(false)
+      setChange("ok")
     })
     .catch(err => {
       console.log(err)
+      setLoader(false)
+      setChange("fail")
     })
+  
   }
 
   const changeHandler = (e) => {
@@ -53,7 +62,7 @@ const handleSubmit = (e) => {
     })
   }
 
-const {firstName, lastName, programming, phone} = posts
+const {first_name, last_name, programming, phone} = posts
   return (
     <div>
       <header
@@ -170,17 +179,17 @@ const {firstName, lastName, programming, phone} = posts
                         <h2> Biz bilan bog'laning</h2>
                         <p>Iltimos, biz bilan bog'laning. Administratorimiz
                         bilan aloqaga chiqing </p>
-                       <form onSubmit={handleSubmit}>
+                       <form onSubmit={handleSubmit} method='POST' >
                           <div className='form-group'>
                             <input type='text' className='form-control' 
-                            placeholder='Ismingiz' name='firstName'
-                            value={firstName}
+                            placeholder='Ismingiz' name='first_name'
+                            value={first_name}
                             onChange={changeHandler}  />
                           </div>
                           <div className='form-group'>
                             <input type='text' className='form-control'
-                            placeholder='Familiyangiz' name='lastName'
-                            value={lastName}
+                            placeholder='Familiyangiz' name='last_name'
+                            value={last_name}
                             onChange={changeHandler} />
                           </div>
                           <div className='form-group'>
@@ -202,7 +211,12 @@ const {firstName, lastName, programming, phone} = posts
                               
                           </div>
                           <div className='btn-group'>
-                            <button type='submit' className='form-btn'>Jo'natish</button>
+                            <button type='submit' className='form-btn'
+                            >
+                            {loader ? (<i className="fa fa-spinner fa-spin"></i>):
+                            null}                                
+                            {change ==="" ? "Junatish": (change === "ok" ? "Junatildi":"Junatilmadi")}
+                            </button>
                           </div>
                        </form>
                        
