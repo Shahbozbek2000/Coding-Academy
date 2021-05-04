@@ -585,17 +585,23 @@ header.theme-menu-wrapper.menu-style-three.fixed #mega-menu-wrapper .nav>li>a {p
   background: url(../svg/1.svg);
   height: 100%;
 }
-#theme-main-banner {margin-bottom: 90px;}
+#theme-main-banner 
+{margin-bottom: 90px;
+ -webkit-margin-bottom: 90px;}
 .camera_wrap {
   float:none;
+  -webkit-float: none;
 }
 #theme-main-banner .camera_prev, #theme-main-banner .camera_next {
   height: 70px;
+  -webkit-height: 70px;
   margin-top: -35px;
+  -webkit-margin-top: -35px;
   width: 30px;
   color: #159475;
   background: transparent;
   border-radius: 5px;
+  -webkit-border-radius: 5px;
 }
 #theme-main-banner .camera_prev:before, #theme-main-banner .camera_next:before {
   font-family: 'font-awesome';
@@ -3801,6 +3807,7 @@ footer .bottom-footer {padding: 25px 0 70px 0;}
   transition: all .5s ease-in-out !important;
   min-height: 250px;
   cursor: pointer;
+  -webkit-flex-direction: column;
  flex-direction: column; }
 #part-one .card .card-title h5{
   color: white;
