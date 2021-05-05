@@ -22,14 +22,17 @@ class MyDocument extends Document {
 
           <link rel="stylesheet" type="text/css" href="css/style.css" />
           <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+
         </Head>
         <body>
           <Main />
           <NextScript />
 
+
           <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
           <script src="vendor/html5shiv.js"></script>
-          <script src="vendor/respond.js"></script>
+        
+             
           
           <script
             type="text/javascript"
@@ -83,6 +86,7 @@ class MyDocument extends Document {
             type="text/javascript"
             src="vendor/fancybox/dist/jquery.fancybox.min.js"
           ></script>
+          <script src="https://raw.githubusercontent.com/aFarkas/html5shiv/master/dist/html5shiv.min.js"></script>
           <script type="text/javascript" src="js/theme.js"></script>
         </body>
       </Html>

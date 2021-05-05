@@ -23,6 +23,7 @@ export function Navbar() {
   })
   const [loader, setLoader] = useState(false)
   const [change, setChange] = useState("")
+  
  
   const router = useRouter()
   const pathname = router.pathname
@@ -39,7 +40,7 @@ export function Navbar() {
 const handleSubmit = async (e) => {
   setLoader(true)  
   e.preventDefault()
-    // console.log(posts)
+    console.log(posts)
    await axios.post(`https://coding2academy.herokuapp.com/create_student`, posts)
     .then(res => {
       console.log(res)
@@ -214,7 +215,8 @@ const {first_name, last_name, programming, phone} = posts
                             <button type='submit' className='form-btn'
                             >
                             {loader ? (<i className="fa fa-spinner fa-spin"></i>):
-                            null}                                
+                            null}
+                                                          
                             {change ==="" ? "Junatish": (change === "ok" ? "Junatildi":"Junatilmadi")}
                             </button>
                           </div>
