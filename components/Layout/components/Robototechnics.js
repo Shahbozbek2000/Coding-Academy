@@ -18,7 +18,7 @@ export function Robototechnics() {
               <image
                 width="854"
                 height="632"
-                href="https://store.dji.bg/img/cms/robomaster/robomaster-s1/dji-robomaster-s1-dji-store-sofia-10.jpg"
+                href="images/carousel/robo.png"
                 className="image-shape"
               ></image>
             </g>

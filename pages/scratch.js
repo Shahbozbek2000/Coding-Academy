@@ -7,7 +7,7 @@ import { ScratchCard } from '../scratchComponents/ScratchCard'
 
 export default function Scratch(){
     return (
-        <div>
+        <>
          <Head>
           <meta name='keywords' content='Coding Academy in Tashkent & Scratch page' />
            <title>Scratch Page</title>
@@ -16,6 +16,6 @@ export default function Scratch(){
           <ScratchHeader/>
           <ScratchCard/>
          </body>
-        </div>
+        </>
     )
 }

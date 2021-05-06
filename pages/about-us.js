@@ -17,7 +17,7 @@ export default function aboutUs() {
         />
         <title>About Us Page</title>
       </Head>
-      <body>
+      <div>
         <AboutHeader />
         <AboutText />
         
@@ -34,7 +34,7 @@ export default function aboutUs() {
           job3="Junior Teacher"
         />
         <AboutPanel />
-      </body>
+      </div>
     </>
   );
 }

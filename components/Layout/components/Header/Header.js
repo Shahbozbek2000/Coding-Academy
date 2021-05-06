@@ -50,7 +50,7 @@ export function Header() {
                             <use xlinkHref="#shape-one" />
                         </clipPath>
                         <g clipPath="url(#shape-one)">
-                            <image width="778" height="576" href="images/carousel/carousel-2.png"
+                            <image width="778" height="576" href="images/carousel/robo-kids.png"
                                 className="banner-img-one">
                             </image>
                         </g>

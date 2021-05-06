@@ -12,18 +12,16 @@ import axios from 'axios'
 
 export function Navbar() {
   const [open, setOpen] = useState(false)
- 
-
   const [posts, setPosts] = useState({
     first_name: '',
     last_name: '',
     programming: '',
     phone:''
-
-  })
-  const [loader, setLoader] = useState(false)
-  const [change, setChange] = useState("")
-  
+})
+  // const [loader, setLoader] = useState(false)
+  // const [change, setChange] = useState("")
+  // const [correct, setCorrect] = useState("")
+  const [stateLoader, setStateLoader] = useState("")
  
   const router = useRouter()
   const pathname = router.pathname
@@ -38,19 +36,23 @@ export function Navbar() {
   
  
 const handleSubmit = async (e) => {
-  setLoader(true)  
+  // setLoader("click")
+  setStateLoader("spinner")  
   e.preventDefault()
     console.log(posts)
    await axios.post(`https://coding2academy.herokuapp.com/create_student`, posts)
     .then(res => {
       console.log(res)
-      setLoader(false)
-      setChange("ok")
+      // setLoader(false)
+      // setChange("ok")
+      setStateLoader("ok")
     })
     .catch(err => {
       console.log(err)
-      setLoader(false)
-      setChange("fail")
+      // setLoader(false)
+      // setChange("fail")
+      // setCorrect(true)
+      setStateLoader("error")
     })
   
   }
@@ -116,11 +118,7 @@ const {first_name, last_name, programming, phone} = posts
                           <li>
                             <a href="/full-stack">Full Stack development </a>
                           </li>
-                          <li>
-                            <Link href="/bootcamp">
-                              <a>Bootcamp</a>
-                            </Link>
-                          </li>
+                          
                         </ul>
                       </li>
                       <li>
@@ -131,9 +129,7 @@ const {first_name, last_name, programming, phone} = posts
                         English 
                       </a>
                       </li>
-                      <li>
-                        <a href="/"> Scratch </a>
-                      </li>
+                    
                     </ul>
                   </li>
                   <li className="dropdown-holder menu-list">
@@ -184,13 +180,13 @@ const {first_name, last_name, programming, phone} = posts
                           <div className='form-group'>
                             <input type='text' className='form-control' 
                             placeholder='Ismingiz' name='first_name'
-                            value={first_name}
+                            value={first_name} required
                             onChange={changeHandler}  />
                           </div>
                           <div className='form-group'>
                             <input type='text' className='form-control'
                             placeholder='Familiyangiz' name='last_name'
-                            value={last_name}
+                            value={last_name} required
                             onChange={changeHandler} />
                           </div>
                           <div className='form-group'>
@@ -207,17 +203,19 @@ const {first_name, last_name, programming, phone} = posts
                           </div>
                           <div className='form-group'>
                             
-                       <input type='tel' className='form-control'
+                       <input type='tel' className='form-control' required
                        name='phone' value={phone} onChange={changeHandler} />
                               
                           </div>
                           <div className='btn-group'>
-                            <button type='submit' className='form-btn'
-                            >
-                            {loader ? (<i className="fa fa-spinner fa-spin"></i>):
-                            null}
-                                                          
-                            {change ==="" ? "Junatish": (change === "ok" ? "Junatildi":"Junatilmadi")}
+                            <button type='submit' className='form-btn'>
+                              {
+                                stateLoader === "" ? "Junatish" : 
+                                  (stateLoader==="spinner" ? (<span><i className="fa fa-spinner fa-spin"></i>Junatilmoqda...</span>  ):
+                                    (stateLoader === "ok" ? (<i className="fa fa-check">Junatildi</i>): 
+                                      (stateLoader === "error" ? "Junatilmadi":null))  
+                                )
+                              }
                             </button>
                           </div>
                        </form>

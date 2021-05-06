@@ -8,14 +8,19 @@ import { BlogSection } from "../blogComponents copy/BlogSection";
 
 export default function blog() {
   return (
-    <div>
+    <>
       <Head>
         <title>Agile Organisations | Blog</title>
         <meta name="keywords" content="Blog Page" />
+        
       </Head>
+      <div>
       <BlogHeader/>
       <BlogSection/>
       <BlogCard/>
-    </div>
+
+      
+      </div>
+    </>
   );
 }

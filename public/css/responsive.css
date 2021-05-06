@@ -288,6 +288,10 @@
   }
 }
 @media only screen and (max-width: 576px) {
+  .more-about-us .main-content h2{
+    font-size: 25px;
+    line-height: 40px;
+  }
   .pricing-plan-one .theme-title h2{
     font-size: 20px !important;
     line-height: 1.5 !important;
@@ -331,7 +335,11 @@
   }
 }
 
-
+@media only screen and (max-width: 768px) {
+  #theme-main-banner .course-name{
+    width: 100% !important;
+  }
+}
 
 
 

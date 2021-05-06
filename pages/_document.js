@@ -28,16 +28,15 @@ class MyDocument extends Document {
           <Main />
           <NextScript />
 
-
-          <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-          <script src="vendor/html5shiv.js"></script>
+         
         
-             
           
           <script
             type="text/javascript"
             src="vendor/jquery.2.2.3.min.js"
           ></script>
+          <script type='text/javascript'
+          src='vendor/Camera-master/scripts/jquery.min.js'></script>
 
           <script
             type="text/javascript"
@@ -86,8 +85,13 @@ class MyDocument extends Document {
             type="text/javascript"
             src="vendor/fancybox/dist/jquery.fancybox.min.js"
           ></script>
-          <script src="https://raw.githubusercontent.com/aFarkas/html5shiv/master/dist/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        
           <script type="text/javascript" src="js/theme.js"></script>
+          <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+          <script src="vendor/html5shiv.js"></script>
+          
+          
         </body>
       </Html>
     );

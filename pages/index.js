@@ -17,9 +17,9 @@ export default function Home() {
           href="images/fav-icon/icon.png"
         />
       </Head>
-      <body>
+      <div>
         <HomePage />
-      </body>
+      </div>
     </>
   );
 }

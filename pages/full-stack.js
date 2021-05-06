@@ -9,7 +9,7 @@ import FullStackPlan from "../fullStackComponent/FullStackPlan";
 
 export default function fullstack() {
   return (
-    <div>
+    <>
       <Head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -17,7 +17,7 @@ export default function fullstack() {
 
         <title>Full-Stack Page</title>
       </Head>
-      <body>
+      <div>
         <FullStackHeader
           name="Web Development"
           title="  CAT kurslari studentlarga butun hayoti davomida yuqori
@@ -47,7 +47,7 @@ export default function fullstack() {
           job3="Junior Teacher"
         />
         <FullStackPlan />
-      </body>
-    </div>
+      </div>
+    </>
   );
 }

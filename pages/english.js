@@ -3,21 +3,21 @@ import { FullStackHeader } from "../fullStackComponent/FullStackHeader";
 import FullStackMentors from "../fullStackComponent/FullStackMentors";
 import { FullStackService } from "../fullStackComponent/FullStackService";
 import { LanguageCareer } from "../languageComponents/LanguageCareer";
-import { LanguageCounter } from "../languageComponents/LanguageCounter";
 import LanguagePlan from "../languageComponents/LanguagePlan";
 import {FullStactTabs}  from '../fullStackComponent/FullStactTabs'
+import React from "react";
 export default function English() {
   return (
-    <div>
+    <React.Fragment>
       <Head>
         <meta name="keywords" content="Professional english teachers" />
         <title>English courses</title>
       </Head>
-      <body>
+      <div>
         <FullStackHeader name='English' title='Ingliz tilini o’rgan o’zingga chet el eshiklarini och'
         image='https://www.edgehill.ac.uk/study/files/2018/11/Media-4.jpg'
         image1='https://way-to-success.net/wp-content/uploads/2020/12/english-turizm.jpg' />
-        <LanguageCounter/>
+       
         <LanguageCareer name='O`z kareerangni dasturchi sifatida boshla'
         info=' Unumli ta`lim nafaqat yaxshi o`quv materiallariga bog`liq, Balki
         o`qiyotgan va o`qitayotgan insonlarni bir-biri bilan bog`lashdir.
@@ -34,9 +34,7 @@ export default function English() {
         job3 = 'Junior Teacher'
          />
          <LanguagePlan/>
-        
-
-      </body>
-    </div>
+         </div>
+    </React.Fragment>
   );
 }
