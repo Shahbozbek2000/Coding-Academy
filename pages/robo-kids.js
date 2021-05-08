@@ -19,7 +19,7 @@ export default function RoboKids() {
         />
         <title>Robo-Kids Page</title>
       </Head>
-      <body>
+      <div>
         <FullStackHeader
           name="Robototexnika"
           title="Robot yasashni Dasturlash orqali o`rganing"
@@ -44,7 +44,7 @@ export default function RoboKids() {
         job3 = 'Junior Teacher'
         />
         <LanguagePlan/>
-      </body>
+      </div>
     </React.Fragment>
   );
 }

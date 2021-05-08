@@ -13,7 +13,7 @@ export  function FullStackHeader(props) {
             <h1 className="wow fadeInUp animated props-name" data-wow-delay="0.2s">
             {props.title}
             </h1>
-            <a href="/fullstack" className="tran3s hvr-trim wow fadeInUp
+            <a href="/full-stack" className="tran3s hvr-trim wow fadeInUp
               animated p-bg-color button-one" data-wow-delay="0.3s">Batafsil</a>
           </div> 
         </div> 

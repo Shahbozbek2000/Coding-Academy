@@ -286,8 +286,17 @@
     line-height: 40px;
     font-size: 22px !important;
   }
+  .more-about-us .main-content .main-wrapper{
+    padding: 52px 0px;
+  }
 }
 @media only screen and (max-width: 576px) {
+  .theme-menu-wrapper.fixed{
+    padding-top: 7px !important;
+  }
+#career-wrapper .card {
+  margin-bottom: 0;
+}
   .more-about-us .main-content h2{
     font-size: 25px;
     line-height: 40px;
@@ -335,7 +344,7 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 868px) {
   #theme-main-banner .course-name{
     width: 100% !important;
   }

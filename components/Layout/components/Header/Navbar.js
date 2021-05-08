@@ -18,9 +18,6 @@ export function Navbar() {
     programming: '',
     phone:''
 })
-  // const [loader, setLoader] = useState(false)
-  // const [change, setChange] = useState("")
-  // const [correct, setCorrect] = useState("")
   const [stateLoader, setStateLoader] = useState("")
  
   const router = useRouter()
@@ -36,22 +33,18 @@ export function Navbar() {
   
  
 const handleSubmit = async (e) => {
-  // setLoader("click")
+  
   setStateLoader("spinner")  
   e.preventDefault()
     console.log(posts)
    await axios.post(`https://coding2academy.herokuapp.com/create_student`, posts)
     .then(res => {
       console.log(res)
-      // setLoader(false)
-      // setChange("ok")
+    
       setStateLoader("ok")
     })
     .catch(err => {
       console.log(err)
-      // setLoader(false)
-      // setChange("fail")
-      // setCorrect(true)
       setStateLoader("error")
     })
   

@@ -25,7 +25,7 @@ export default function FullStackCard(props) {
                     CAT academiyasi bilan birgalikda, Full stack Web
                     developmentni JavaScript va Typescript orqali qurasiz.
                     Bizning zamonaviy va raqobatdosh o’quv dasturimiz jahonni
-                    eng talabgir dasturchilariga aylantiradi.{" "}
+                    eng talabgir dasturchilariga aylantiradi.
                   </p>
                 </div>
               </div>

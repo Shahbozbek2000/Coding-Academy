@@ -19,12 +19,21 @@ class MyDocument extends Document {
             content="#2c2c2c"
           />
          
-
           <link rel="stylesheet" type="text/css" href="css/style.css" />
           <link rel="stylesheet" type="text/css" href="css/responsive.css" />
-          
-          
-    
+{/*           
+          <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <![endif]-->
+     */}
+     {/* <!-- [if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="vendor/html5shiv.js"></script>
+      <script src="vendor/respond.js"></script>
+    <![endif] --> */}
+    {/* <!--[if lt IE 9]> 
+<script src="https://raw.githubusercontent.com/aFarkas/html5shiv/master/dist/html5shiv.min.js"></script>
+ <![endif]--> */}
         </Head>
         <body>
           <Main />

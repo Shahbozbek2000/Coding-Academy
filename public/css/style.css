@@ -1797,6 +1797,7 @@ footer .bottom-footer {padding: 25px 0 70px 0;}
 .inner-page-banner .opacity h1 {
   color: #fff;
   font-weight: 400;
+  font-size: 40px;
 }
 .inner-page-banner .opacity ul li {
   display: inline-block;
@@ -4032,7 +4033,7 @@ footer .bottom-footer {padding: 25px 0 70px 0;}
 
 @media only screen and (max-width: 992px) {
   .paper{
-    width: 60%;
+    width: 70%;
   }
 }
 
@@ -4068,6 +4069,13 @@ footer .bottom-footer {padding: 25px 0 70px 0;}
 @media only screen and (max-width: 360px) {
   .paper .form-control {
     height: 45px !important;
+  }
+  .paper p{
+    display: none;
+  }
+  .paper .modal-close-icon{
+    position: absolute;
+    top: 10px;
   }
 }
 .tab-set {

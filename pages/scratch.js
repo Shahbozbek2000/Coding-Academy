@@ -12,10 +12,10 @@ export default function Scratch(){
           <meta name='keywords' content='Coding Academy in Tashkent & Scratch page' />
            <title>Scratch Page</title>
          </Head>
-         <body> 
+         <div> 
           <ScratchHeader/>
           <ScratchCard/>
-         </body>
+         </div>
         </>
     )
 }

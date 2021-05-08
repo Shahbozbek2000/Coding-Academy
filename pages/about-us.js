@@ -1,6 +1,5 @@
 import React from "react";
-import  Head  from "next/head";
-import { AboutCounter } from "../AboutUsComponents/AboutCounter";
+import Head from "next/head";
 import { AboutHeader } from "../AboutUsComponents/AboutHeader";
 import { AboutPanel } from "../AboutUsComponents/AboutPanel";
 import { AboutText } from "../AboutUsComponents/AboutText";
@@ -20,8 +19,8 @@ export default function aboutUs() {
       <div>
         <AboutHeader />
         <AboutText />
-        
-        <AboutCounter />
+
+
         <FullStackMentors
           image="https://expertnov.ru/800/600/https/howyoutube.ru/wp-content/uploads/2018/11/Image1542350522757.jpeg"
           name="Muhammad Amin"
