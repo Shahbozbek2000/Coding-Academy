@@ -22,7 +22,9 @@ class MyDocument extends Document {
 
           <link rel="stylesheet" type="text/css" href="css/style.css" />
           <link rel="stylesheet" type="text/css" href="css/responsive.css" />
-
+          
+          
+    
         </Head>
         <body>
           <Main />
@@ -37,7 +39,6 @@ class MyDocument extends Document {
           ></script>
           <script type='text/javascript'
           src='vendor/Camera-master/scripts/jquery.min.js'></script>
-
           <script
             type="text/javascript"
             src="vendor/bootstrap-select/dist/js/bootstrap-select.js"
@@ -75,7 +76,7 @@ class MyDocument extends Document {
             type="text/javascript"
             src="vendor/owl-carousel/owl.carousel.min.js"
           ></script>
-
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
           <script type="text/javascript" src="vendor/jquery.appear.js"></script>
           <script
             type="text/javascript"
@@ -85,13 +86,13 @@ class MyDocument extends Document {
             type="text/javascript"
             src="vendor/fancybox/dist/jquery.fancybox.min.js"
           ></script>
-          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://raw.githubusercontent.com/aFarkas/html5shiv/master/dist/html5shiv.min.js"></script>
         
-          <script type="text/javascript" src="js/theme.js"></script>
+            <script type="text/javascript" src="js/theme.js"></script>
           <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
           <script src="vendor/html5shiv.js"></script>
           
-          
+
         </body>
       </Html>
     );

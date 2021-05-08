@@ -315,9 +315,15 @@
 
   // expose html5
   window.html5 = html5;
+  window.html5 = {
+    'elements': "mark section customelement",
+    'shivCss': false,
+    'shivMethods': false
+  }
 
   // shiv the document
-  shivDocument(document);
+  window.html5.elements = 'mark section customelement'
+  html5.shivDocument(document);
 
   if(typeof module == 'object' && module.exports){
     module.exports = html5;

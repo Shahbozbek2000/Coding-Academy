@@ -13,7 +13,7 @@ export  function OurCompany() {
                     <div className="">
                         <div className="card-image">
                             <img
-                                src="https://store.dji.bg/img/cms/robomaster/robomaster-s1/dji-robomaster-s1-dji-store-sofia-10.jpg"
+                                src="https://www.softtrix.com/wp-content/uploads/2019/06/data_computer.jpg"
                                 alt="card-image" />
 
                         </div>
@@ -39,7 +39,7 @@ export  function OurCompany() {
                     <div className="">
                         <div className="card-image">
                             <img
-                                src="images/carousel/carousel-1.webp"
+                                src="https://pbs.twimg.com/media/DR9lbWGWsAAaqge.jpg"
                                 alt="card-image" />
 
                         </div>
@@ -65,7 +65,7 @@ export  function OurCompany() {
                     <div className="">
                         <div className="card-image">
                             <img
-                                src="images/carousel/carousel-2.jfif"
+                                src="https://smapse.com/storage/2019/04/converted/885_0_z-5.jpg"
                                 alt="card-image" />
 
                         </div>
@@ -91,7 +91,7 @@ export  function OurCompany() {
                     <div className="">
                         <div className="card-image">
                             <img
-                                src="images/carousel/carousel-4.jpg"
+                                src="https://images.pexels.com/photos/3577561/pexels-photo-3577561.jpeg?auto=compress&amp;cs=tinysrgb&amp;fit=crop&amp;h=627&amp;w=1200"
                                 alt="card-image" />
 
                         </div>
