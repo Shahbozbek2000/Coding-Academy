@@ -122,6 +122,11 @@ const {first_name, last_name, programming, phone} = posts
                         English 
                       </a>
                       </li>
+                      <li>
+                         <a href="/python">
+                         Python
+                         </a>
+                      </li>
                     
                     </ul>
                   </li>

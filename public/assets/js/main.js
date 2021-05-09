@@ -256,3 +256,69 @@
 		);
 	}
 }());
+
+Slider.prototype.isSwipe = function(threshold) {
+    return Math.abs(deltaX) > Math.max(threshold, Math.abs(deltaY));
+}
+
+
+Slider.prototype.touchStart = function(e) {
+
+    if (this._isSliding) return false;
+
+      touchMoving = true;
+      deltaX = deltaY = 0;
+
+    if (e.originalEvent.touches.length === 1) {
+
+        startX = e.originalEvent.touches[0].pageX;
+        startY = e.originalEvent.touches[0].pageY;
+
+        this._$slider.on('touchmove touchcancel', this.touchMove.bind(this)).one('touchend', this.touchEnd.bind(this));
+
+        isFlick = true;
+
+        window.setTimeout(function() {
+            isFlick = false;
+        }, flickTimeout);
+    }
+}
+
+
+Slider.prototype.touchMove = function(e) {
+
+    deltaX = startX - e.originalEvent.touches[0].pageX;
+    deltaY = startY - e.originalEvent.touches[0].pageY;
+
+    if(this.isSwipe(swipeThreshold)) {
+        e.preventDefault();
+        e.stopPropagation();
+        swiping = true;
+    }
+    if(swiping) {
+        this.slide(deltaX / this._sliderWidth, true)
+    }
+}
+
+
+
+ let stopScrolling = false;
+
+window.addEventListener("touchmove", handleTouchMove, {
+  passive: false
+});
+
+function handleTouchMove(e) {
+  if (!stopScrolling) {
+    return;
+  }
+  e.preventDefault();
+}
+
+function onTouchStart() {
+  stopScrolling = true;
+}
+
+function onTouchEnd() {
+  stopScrolling = false;
+}

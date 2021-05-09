@@ -98,7 +98,7 @@ class MyDocument extends Document {
           <script src="https://raw.githubusercontent.com/aFarkas/html5shiv/master/dist/html5shiv.min.js"></script>
         
             <script type="text/javascript" src="js/theme.js"></script>
-          <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+     
           <script src="vendor/html5shiv.js"></script>
           
 

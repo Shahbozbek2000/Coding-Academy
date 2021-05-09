@@ -13,7 +13,7 @@ const Layout = ({ children }) => {
       {children}
       <Footer />
       <button className="scroll-top tran3s">
-        <i className="fa fa-angle-up" aria-hidden="true">
+        <i className="fa fa-angle-up">
          
         </i>
       </button>
