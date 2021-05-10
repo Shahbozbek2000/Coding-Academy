@@ -94,7 +94,7 @@
       elements = elements.join(' ');
     }
     if(typeof newElements != 'string'){
-      newElements = newElements.join(' ');
+      newElements = newElements.join(' ')
     }
     html5.elements = elements +' '+ newElements;
     shivDocument(ownerDocument);
